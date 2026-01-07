@@ -1,0 +1,383 @@
+export const translations = {
+  en: {
+    nav: {
+      applications: "Applications",
+      technologies: "Technologies",
+      about: "About Us",
+      services: "Services",
+      portfolio: "Portfolio",
+      contact: "Contact",
+    },
+    hero: {
+      badge: "Since 1990 — International Operations",
+      title1: "Your Experts in",
+      title2: "Water & Wastewater",
+      title3: "Engineering",
+      description:
+        "Established in 1990, S.C. Euromarket SRL is a reputable, highly competent, and professional water and wastewater engineering company with international operations in Europe, the Middle East and Africa.",
+      cta1: "View Our Work",
+      cta2: "Get in Touch",
+      scroll: "Scroll to explore",
+      stats: {
+        years: "Years Experience",
+        projects: "Projects Completed",
+        satisfaction: "Client Satisfaction",
+      },
+    },
+    applications: {
+      subtitle: "What We Do",
+      title: "Our Applications",
+      description:
+        "Comprehensive water and wastewater engineering solutions tailored to your specific needs.",
+      sewage: {
+        title: "Sewage Treatment",
+        description:
+          "Our range of products starts from small household prefabricated units to medium size prefabricated treatment plants and extends to municipal installations with pre-engineered plants and a wide range of equipment designed and fabricated to serve the requirements of every individual application. We design sewage treatment plants based on the latest process technologies including Moving Bed Biofilm Reactors (MBBR), Sequencing Batch Reactors (SBR), Membrane Bioreactor (MBR) and more.",
+        features: ["MBBR Technology", "SBR Systems", "MBR Solutions", "Pre-engineered Plants"],
+      },
+      water: {
+        title: "Water Treatment",
+        description:
+          "Depending on the raw water characteristics and required treated water quality, various equipment and processes can be combined to ensure the result. Commonly used water treatment processes are filtration, clarification, demineralization, softening, membrane filtration, disinfection etc. We deliver equipment and complete plants for commercial, industrial and municipal applications. In many cases these plants may be delivered in containerised units.",
+        features: ["Filtration & Clarification", "Demineralization", "Membrane Filtration", "Containerised Units"],
+      },
+      industrial: {
+        title: "Industrial Wastewater",
+        description:
+          "Industrial wastewater treatment is a complex task. Depending on the wastewater characteristics, the specific conditions in the particular application as well as set discharge limits at the effluent, different processes may be combined to achieve optimal results.",
+        features: ["Custom Solutions", "Complex Streams", "Discharge Compliance", "Process Integration"],
+      },
+    },
+    about: {
+      subtitle: "About Us",
+      title: "Engineering Excellence Since 1990",
+      description:
+        "S.C. EUROMARKET SRL was established in 1990 when the construction of wastewater treatment plants was a new and growing market in Cyprus and the Middle East. In 1995, the Romania branch was established, consolidating our position in the European market. ISO 9001:2000 certified, we have completed over 500 projects across Europe, the Middle East and Africa. Our own chemical laboratory ensures precise quality control, while continuous R&D investments keep us at the forefront of water treatment technology. Health and Safety remain fundamental principles in all our operations.",
+      highlights: [
+        "ISO 9001:2000 Certified",
+        "In-house Chemical Laboratory",
+        "Continuous R&D Investment",
+        "International Operations",
+      ],
+      values: {
+        excellence: { title: "Excellence", description: "Committed to delivering the highest quality in every project" },
+        partnership: { title: "Partnership", description: "Building long-term relationships with our clients" },
+        innovation: { title: "Innovation", description: "Embracing cutting-edge technologies and solutions" },
+      },
+    },
+    services: {
+      subtitle: "Our Services",
+      title: "Comprehensive Solutions",
+      description:
+        "From design to operation, we provide end-to-end services for all your water and wastewater engineering needs.",
+      cta: "Discuss Your Project",
+      items: {
+        design: { title: "Design & Build Plants", description: "Water and wastewater treatment plants are designed and built in the most efficient and cost effective manner as complete systems offering the most appropriate technical solution. This approach enables our client to take full advantage of the latest proven novel technologies embodied in a working engineering system that benefits from reliability, effectiveness, low initial capital investment and low running costs in long term." },
+        operation: { title: "Operation & Maintenance", description: "One of Euromarket's most crucial responsibilities is the trouble free operation and maintenance (O&M) of the treatment plants and equipment that we supply. Based on this fundamental principle we offer a complete package of after sales services to all our clients." },
+        repair: { title: "Repair & Upgrade", description: "Transformation of your old inadequate or inefficient installation into a reliable system that meets your current needs. Old treatment plants in need of restoration, or treatment facilities whose inflow capacity and/or characteristics are no longer adequate can be upgraded and transformed using the best value-for-money modifications." },
+        equipment: { title: "Equipment Overhaul", description: "Even the best electromechanical equipment can fail. As part of Euromarket's range of post sales services, we operate a fully equipped workshop run by qualified personnel who perform preventive and/or corrective repairs to electromechanical equipment. All repair work is carried out according to the equipment manufacturers' specifications and recommendations." },
+        pilot: { title: "Pilot & Lab Units", description: "For more than a decade S.C. Euromarket SRL has been involved with various research projects as a partner or a technology integrator. We design and construct Lab scale or even bigger Pilot scale units to serve the requirements of academic or research institutions in pursuit of specific investigations and results." },
+        consulting: { title: "Consulting & Training", description: "Water and wastewater engineering covers a broad range of conditions and limitations unique to each setting. Because of the broad range of project-specific conditions, applied water and wastewater engineering is an advanced technological field that requires both scientific and empirical engineering knowledge." },
+      },
+    },
+    portfolio: {
+      subtitle: "Our Work",
+      title: "Featured Projects",
+      description:
+        "Extensive portfolio of projects, local and national clients with notable results that make the difference and change communities.",
+      cta: "Start Your Project",
+      viewDetails: "View Details",
+      stats: {
+        residents: "Residents",
+        technology: "Technology",
+        recovery: "Recovery",
+        operation: "Operation",
+        capacity: "m³/day",
+        purity: "Purity",
+        removal: "Removal",
+      },
+      projects: {
+        municipal: { title: "Municipal Wastewater Plant", category: "Sewage Treatment", description: "Complete MBBR-based treatment facility serving 50,000 residents" },
+        industrial: { title: "Industrial Water Recycling", category: "Industrial", description: "Closed-loop water recycling system for manufacturing plant" },
+        drinking: { title: "Drinking Water Station", category: "Water Treatment", description: "Advanced filtration and disinfection for potable water supply" },
+        food: { title: "Food Industry WWTP", category: "Industrial", description: "High-strength wastewater treatment for food processing" },
+      },
+    },
+    contact: {
+      subtitle: "Get in Touch",
+      title: "Contact Us",
+      description:
+        "Ready to start your project? Get in touch with our team of experts and let's discuss your water engineering needs.",
+      info: {
+        office: "Our Office",
+        phone: "Phone",
+        fax: "Fax",
+        email: "Email",
+        hours: "Working Hours",
+        hoursValue: "Mon - Fri: 8:00 - 17:00",
+      },
+      form: {
+        name: "Your Name",
+        namePlaceholder: "John Doe",
+        email: "Email Address",
+        emailPlaceholder: "john@example.com",
+        subject: "Subject",
+        subjectPlaceholder: "Project inquiry",
+        message: "Your Message",
+        messagePlaceholder: "Tell us about your project...",
+        submit: "Send Message",
+        sending: "Sending...",
+        success: "Thank you for your message! We will get back to you soon.",
+      },
+    },
+    footer: {
+      description: "Your experts in water and wastewater engineering since 1990. Delivering innovative solutions for a sustainable future.",
+      quickLinks: "Quick Links",
+      ourServices: "Our Services",
+      contactUs: "Contact Us",
+      copyright: "S.C. Euromarket SRL. All rights reserved.",
+      tagline: "Water & Wastewater Engineering Excellence",
+      services: [
+        "Sewage Treatment",
+        "Water Treatment",
+        "Industrial Wastewater",
+        "Operation & Maintenance",
+        "Consulting & Training",
+      ],
+    },
+    technologies: {
+      subtitle: "Technologies & Equipment",
+      title: "Advanced Treatment Technologies",
+      description: "We design and manufacture a complete range of equipment and systems using proven technologies for water and wastewater treatment applications.",
+      processTitle: "Process Technologies",
+      equipmentTitle: "Manufactured Equipment",
+      cta: "Need custom equipment for your project?",
+      ctaButton: "Request Consultation",
+      processes: {
+        mbbr: "Moving Bed Biofilm Reactor",
+        sbr: "Sequencing Batch Reactor",
+        mbr: "Membrane Bioreactor",
+        daf: "Dissolved Air Flotation",
+        ro: "Reverse Osmosis",
+        uf: "Ultrafiltration",
+      },
+      items: {
+        daf: "DAF Flotation Units",
+        filters: "Filtration & Screening Systems",
+        separators: "Separators & Decanters",
+        dosing: "Chemical Dosing Units",
+        cip: "CIP Systems",
+        pressure: "Pressure Filtration",
+        softening: "Water Softening Systems",
+        compactors: "Compactors",
+        pumping: "Pumping Stations",
+        upgrade: "System Upgrades",
+      },
+    },
+    whyUs: {
+      subtitle: "Why Choose Us",
+      title: "Your Trusted Partner",
+      description: "Over three decades of excellence in water engineering",
+      items: {
+        iso: { title: "ISO 9001:2000", description: "Certified quality management system ensuring consistent, high-quality delivery" },
+        lab: { title: "In-House Laboratory", description: "Chemical and microbiological testing for precise quality control" },
+        rd: { title: "R&D Investment", description: "Continuous research and development for innovative solutions" },
+        support: { title: "24/7 Support", description: "Spare parts stock and rapid response for emergencies" },
+        turnkey: { title: "Turnkey Solutions", description: "Complete design, build and operate services" },
+        experience: { title: "500+ Projects", description: "Proven track record across Europe, Middle East and Africa" },
+      },
+    },
+  },
+  ro: {
+    nav: {
+      applications: "Aplicații",
+      technologies: "Tehnologii",
+      about: "Despre Noi",
+      services: "Servicii",
+      portfolio: "Portofoliu",
+      contact: "Contact",
+    },
+    hero: {
+      badge: "Din 1990 — Operațiuni Internaționale",
+      title1: "Experții Tăi în",
+      title2: "Ingineria Apei",
+      title3: "și Apelor Uzate",
+      description:
+        "Fondată în 1990, S.C. Euromarket SRL este o companie de prestigiu, înalt competentă și profesionistă în domeniul ingineriei apei și apelor uzate, cu operațiuni internaționale în Europa, Orientul Mijlociu și Africa.",
+      cta1: "Vezi Proiectele",
+      cta2: "Contactează-ne",
+      scroll: "Derulează pentru a explora",
+      stats: {
+        years: "Ani de Experiență",
+        projects: "Proiecte Finalizate",
+        satisfaction: "Satisfacție Clienți",
+      },
+    },
+    applications: {
+      subtitle: "Ce Facem",
+      title: "Aplicațiile Noastre",
+      description:
+        "Soluții complete de inginerie a apei și apelor uzate adaptate nevoilor tale specifice.",
+      sewage: {
+        title: "Tratarea Apelor Uzate",
+        description:
+          "Gama noastră de produse începe de la unități prefabricate mici pentru gospodării până la stații de tratare prefabricate de dimensiuni medii și se extinde la instalații municipale cu stații pre-proiectate și o gamă largă de echipamente proiectate și fabricate pentru a servi cerințele fiecărei aplicații individuale. Proiectăm stații de tratare a apelor uzate bazate pe cele mai recente tehnologii de proces, inclusiv Reactoare cu Biofilm Mobil (MBBR), Reactoare cu Șarje Secvențiale (SBR), Bioreactoare cu Membrane (MBR) și altele.",
+        features: ["Tehnologie MBBR", "Sisteme SBR", "Soluții MBR", "Stații Pre-proiectate"],
+      },
+      water: {
+        title: "Tratarea Apei",
+        description:
+          "În funcție de caracteristicile apei brute și de calitatea apei tratate necesară, diverse echipamente și procese pot fi combinate pentru a asigura rezultatul dorit. Procesele de tratare a apei utilizate frecvent sunt filtrarea, clarificarea, demineralizarea, dedurizarea, filtrarea prin membrane, dezinfecția etc. Livrăm echipamente și stații complete pentru aplicații comerciale, industriale și municipale. În multe cazuri, aceste stații pot fi livrate în unități containerizate.",
+        features: ["Filtrare și Clarificare", "Demineralizare", "Filtrare prin Membrane", "Unități Containerizate"],
+      },
+      industrial: {
+        title: "Ape Uzate Industriale",
+        description:
+          "Tratarea apelor uzate industriale este o sarcină complexă. În funcție de caracteristicile apelor uzate, condițiile specifice ale aplicației particulare, precum și limitele de evacuare stabilite la efluent, pot fi combinate diferite procese pentru a obține rezultate optime.",
+        features: ["Soluții Personalizate", "Fluxuri Complexe", "Conformitate Evacuare", "Integrare Procese"],
+      },
+    },
+    about: {
+      subtitle: "Despre Noi",
+      title: "Excelență în Inginerie din 1990",
+      description:
+        "S.C. EUROMARKET SRL a fost înființată în 1990, când construcția stațiilor de tratare a apelor uzate era o piață nouă și în creștere în Cipru și Orientul Mijlociu. În 1995 a luat ființă filiala din România, consolidând poziția firmei pe piața europeană. Certificați ISO 9001:2000, am finalizat peste 500 de proiecte în Europa, Orientul Mijlociu și Africa. Laboratorul nostru chimic propriu asigură controlul precis al calității, iar investițiile continue în cercetare și dezvoltare ne mențin în fruntea tehnologiei de tratare a apei. Sănătatea și Siguranța rămân principii fundamentale în toate operațiunile noastre.",
+      highlights: [
+        "Certificare ISO 9001:2000",
+        "Laborator Chimic Propriu",
+        "Investiții Continue în R&D",
+        "Operațiuni Internaționale",
+      ],
+      values: {
+        excellence: { title: "Excelență", description: "Dedicați livrării celei mai înalte calități în fiecare proiect" },
+        partnership: { title: "Parteneriat", description: "Construim relații pe termen lung cu clienții noștri" },
+        innovation: { title: "Inovație", description: "Adoptăm tehnologii și soluții de ultimă generație" },
+      },
+    },
+    services: {
+      subtitle: "Serviciile Noastre",
+      title: "Soluții Complete",
+      description:
+        "De la proiectare la operare, oferim servicii complete pentru toate nevoile tale de inginerie a apei și apelor uzate.",
+      cta: "Discută Proiectul Tău",
+      items: {
+        design: { title: "Proiectare și Construcție Stații", description: "Stațiile de tratare a apei și apelor uzate sunt proiectate și construite în cel mai eficient și rentabil mod, ca sisteme complete oferind cea mai potrivită soluție tehnică. Această abordare permite clientului nostru să profite pe deplin de cele mai recente tehnologii dovedite, încorporate într-un sistem ingineresc funcțional care beneficiază de fiabilitate, eficacitate, investiție inițială scăzută și costuri de operare reduse pe termen lung." },
+        operation: { title: "Operare și Mentenanță", description: "Una dintre cele mai importante responsabilități ale Euromarket este operarea și întreținerea fără probleme (O&M) a stațiilor de tratare și echipamentelor pe care le furnizăm. Pe baza acestui principiu fundamental, oferim un pachet complet de servicii post-vânzare tuturor clienților noștri." },
+        repair: { title: "Reparații și Modernizare", description: "Transformarea instalației tale vechi, inadecvate sau ineficiente într-un sistem fiabil care îndeplinește nevoile tale actuale. Stațiile de tratare vechi care necesită restaurare sau facilitățile de tratare a căror capacitate și/sau caracteristici de intrare nu mai sunt adecvate pot fi modernizate și transformate folosind cele mai bune modificări raport calitate-preț." },
+        equipment: { title: "Revizie Echipamente", description: "Chiar și cele mai bune echipamente electromecanice pot ceda. Ca parte a gamei de servicii post-vânzare Euromarket, operăm un atelier complet echipat, condus de personal calificat care efectuează reparații preventive și/sau corective la echipamentele electromecanice. Toate lucrările de reparații sunt efectuate conform specificațiilor și recomandărilor producătorilor." },
+        pilot: { title: "Unități Pilot și Laborator", description: "De mai bine de un deceniu, S.C. Euromarket SRL a fost implicată în diverse proiecte de cercetare ca partener sau integrator de tehnologie. Proiectăm și construim unități la scară de laborator sau chiar unități pilot mai mari pentru a servi cerințele instituțiilor academice sau de cercetare în urmărirea unor investigații și rezultate specifice." },
+        consulting: { title: "Consultanță și Training", description: "Ingineria apei și apelor uzate acoperă o gamă largă de condiții și limitări unice pentru fiecare situație. Datorită gamei largi de condiții specifice proiectului, ingineria aplicată a apei și apelor uzate este un domeniu tehnologic avansat care necesită atât cunoștințe inginerești științifice, cât și empirice." },
+      },
+    },
+    portfolio: {
+      subtitle: "Lucrările Noastre",
+      title: "Proiecte Reprezentative",
+      description:
+        "Portofoliu extins de proiecte, clienți locali și naționali cu rezultate notabile care fac diferența și schimbă comunitățile.",
+      cta: "Începe Proiectul Tău",
+      viewDetails: "Vezi Detalii",
+      stats: {
+        residents: "Locuitori",
+        technology: "Tehnologie",
+        recovery: "Recuperare",
+        operation: "Operare",
+        capacity: "m³/zi",
+        purity: "Puritate",
+        removal: "Eliminare",
+      },
+      projects: {
+        municipal: { title: "Stație Epurare Municipală", category: "Tratare Ape Uzate", description: "Instalație completă de tratare bazată pe MBBR pentru 50.000 de locuitori" },
+        industrial: { title: "Reciclare Apă Industrială", category: "Industrial", description: "Sistem de reciclare a apei în circuit închis pentru fabrică" },
+        drinking: { title: "Stație Apă Potabilă", category: "Tratarea Apei", description: "Filtrare avansată și dezinfecție pentru alimentare cu apă potabilă" },
+        food: { title: "SEAU Industrie Alimentară", category: "Industrial", description: "Tratarea apelor uzate cu încărcare mare pentru procesare alimentară" },
+      },
+    },
+    contact: {
+      subtitle: "Contactează-ne",
+      title: "Contact",
+      description:
+        "Pregătit să începi proiectul? Ia legătura cu echipa noastră de experți și hai să discutăm nevoile tale de inginerie a apei.",
+      info: {
+        office: "Biroul Nostru",
+        phone: "Telefon",
+        fax: "Fax",
+        email: "Email",
+        hours: "Program",
+        hoursValue: "Lun - Vin: 8:00 - 17:00",
+      },
+      form: {
+        name: "Numele Tău",
+        namePlaceholder: "Ion Popescu",
+        email: "Adresa de Email",
+        emailPlaceholder: "ion@exemplu.com",
+        subject: "Subiect",
+        subjectPlaceholder: "Solicitare proiect",
+        message: "Mesajul Tău",
+        messagePlaceholder: "Spune-ne despre proiectul tău...",
+        submit: "Trimite Mesaj",
+        sending: "Se trimite...",
+        success: "Mulțumim pentru mesaj! Te vom contacta în curând.",
+      },
+    },
+    footer: {
+      description: "Experții tăi în ingineria apei și apelor uzate din 1990. Livrăm soluții inovatoare pentru un viitor sustenabil.",
+      quickLinks: "Link-uri Rapide",
+      ourServices: "Serviciile Noastre",
+      contactUs: "Contactează-ne",
+      copyright: "S.C. Euromarket SRL. Toate drepturile rezervate.",
+      tagline: "Excelență în Ingineria Apei",
+      services: [
+        "Tratare Ape Uzate",
+        "Tratarea Apei",
+        "Ape Uzate Industriale",
+        "Operare și Mentenanță",
+        "Consultanță și Training",
+      ],
+    },
+    technologies: {
+      subtitle: "Tehnologii și Echipamente",
+      title: "Tehnologii Avansate de Tratare",
+      description: "Proiectăm și fabricăm o gamă completă de echipamente și sisteme utilizând tehnologii dovedite pentru aplicații de tratare a apei și apelor uzate.",
+      processTitle: "Tehnologii de Proces",
+      equipmentTitle: "Echipamente Fabricate",
+      cta: "Aveți nevoie de echipamente personalizate pentru proiectul dumneavoastră?",
+      ctaButton: "Solicitați Consultanță",
+      processes: {
+        mbbr: "Reactor cu Biofilm Mobil",
+        sbr: "Reactor cu Șarje Secvențiale",
+        mbr: "Bioreactor cu Membrane",
+        daf: "Flotație cu Aer Dizolvat",
+        ro: "Osmoză Inversă",
+        uf: "Ultrafiltrare",
+      },
+      items: {
+        daf: "Unități DAF Flotație",
+        filters: "Sisteme Filtrare și Sitare",
+        separators: "Separatoare și Decantoare",
+        dosing: "Unități Dozare Chimicale",
+        cip: "Sisteme CIP",
+        pressure: "Filtrare Sub Presiune",
+        softening: "Sisteme Dedurizare",
+        compactors: "Compactoare",
+        pumping: "Stații de Pompare",
+        upgrade: "Modernizare Sisteme",
+      },
+    },
+    whyUs: {
+      subtitle: "De Ce Să Ne Alegeți",
+      title: "Partenerul Tău de Încredere",
+      description: "Peste trei decenii de excelență în ingineria apei",
+      items: {
+        iso: { title: "ISO 9001:2000", description: "Sistem certificat de management al calității pentru livrare constantă și de înaltă calitate" },
+        lab: { title: "Laborator Propriu", description: "Testare chimică și microbiologică pentru control precis al calității" },
+        rd: { title: "Investiții în R&D", description: "Cercetare și dezvoltare continuă pentru soluții inovatoare" },
+        support: { title: "Suport 24/7", description: "Stoc de piese de schimb și răspuns rapid pentru urgențe" },
+        turnkey: { title: "Soluții la Cheie", description: "Servicii complete de proiectare, construcție și operare" },
+        experience: { title: "500+ Proiecte", description: "Experiență dovedită în Europa, Orientul Mijlociu și Africa" },
+      },
+    },
+  },
+} as const;
+
+export type Language = keyof typeof translations;
+export type TranslationKeys = (typeof translations)[Language];

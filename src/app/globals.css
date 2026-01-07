@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #26549e;
+  --color-primary-dark: #1a3d75;
+  --color-primary-light: #3a6dc4;
+  --color-secondary: #f2545f;
+  --color-accent: #3ec7f5;
+  --color-background: #ffffff;
+  --color-foreground: #1a1a2e;
+  --color-muted: #707070;
+  --color-surface: #f8fafc;
+  --font-sans: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Text alignment utilities */
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-center-force {
+  text-align: center !important;
+}
+
+/* Gradient backgrounds */
+.gradient-primary {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, rgba(38, 84, 158, 0.95) 0%, rgba(26, 61, 117, 0.9) 100%);
+}
+
+/* Text gradient */
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card shadows */
+.card-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.card-shadow-lg {
+  box-shadow: 0 10px 40px -10px rgba(38, 84, 158, 0.3);
+}
+
+/* Section styling */
+.section-padding {
+  padding: 5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 6rem 2rem;
+  }
+}
+
+/* Animation utilities */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Accessibility: Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

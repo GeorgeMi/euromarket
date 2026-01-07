@@ -1,0 +1,11 @@
+# Robots.txt for Euromarket SRL
+# https://www.euromarket-ro.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.euromarket-ro.com/sitemap.xml
+
+# Disallow admin or private areas (if any)
+Disallow: /api/
