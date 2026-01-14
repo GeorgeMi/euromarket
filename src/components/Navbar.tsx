@@ -12,11 +12,11 @@ export default function Navbar() {
   const { language, setLanguage, t } = useLanguage();
 
   const navLinks = [
-    { href: "#applications", label: t.nav.applications },
-    { href: "#technologies", label: t.nav.technologies },
-    { href: "#services", label: t.nav.services },
-    { href: "#portfolio", label: t.nav.portfolio },
-    { href: "#contact", label: t.nav.contact },
+    { href: "/#applications", label: t.nav.applications },
+    { href: "/#technologies", label: t.nav.technologies },
+    { href: "/#services", label: t.nav.services },
+    { href: "/#portfolio", label: t.nav.portfolio },
+    { href: "/#contact", label: t.nav.contact },
   ];
 
   const toggleLanguage = () => {
@@ -33,9 +33,9 @@ export default function Navbar() {
             <Image
               src="/images/logo.png"
               alt="Euromarket SRL"
-              width={180}
-              height={50}
-              className="h-12 w-auto"
+              width={200}
+              height={56}
+              className="h-14 w-auto"
               priority
             />
           </Link>

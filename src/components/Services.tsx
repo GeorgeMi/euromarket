@@ -31,7 +31,7 @@ const cardVariants = {
 };
 
 export default function Services() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const services = [
     { id: "design", icon: Building2, ...t.services.items.design },
@@ -92,7 +92,7 @@ export default function Services() {
 
               {/* Content */}
               <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-              <p className="text-white/70 leading-relaxed">{service.description}</p>
+              <p className="text-white/70 leading-relaxed text-justify">{service.description}</p>
             </motion.div>
           ))}
         </motion.div>

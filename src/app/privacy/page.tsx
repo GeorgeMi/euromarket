@@ -10,7 +10,7 @@ const content = {
     sections: [
       {
         title: "1. Data Controller",
-        content: `S.C. Euromarket SRL, with headquarters at Bd. Poitier nr. 53, Iași - 700669, Romania, is the data controller for your personal data collected through this website.`,
+        content: `Euromarket WWE SRL, with headquarters at 50B Poitiers Blvd., Iași - 700669, Romania, is the data controller for your personal data collected through this website.`,
       },
       {
         title: "2. Data We Collect",
@@ -65,10 +65,10 @@ To exercise these rights, contact us at: info@euromarket-ro.com`,
       {
         title: "8. Contact",
         content: `For any questions regarding this privacy policy or your personal data, please contact:
-S.C. Euromarket SRL
-Bd. Poitier nr. 53, Iași - 700669, Romania
+Euromarket WWE SRL
+50B Poitiers Blvd., Iași - 700669, Romania
 Email: info@euromarket-ro.com
-Phone: +4 (0232) 233693`,
+Phone: +4 (0232) 233 693`,
       },
     ],
   },
@@ -78,7 +78,7 @@ Phone: +4 (0232) 233693`,
     sections: [
       {
         title: "1. Operatorul de Date",
-        content: `S.C. Euromarket SRL, cu sediul în Bd. Poitier nr. 53, Iași - 700669, România, este operatorul datelor dumneavoastră personale colectate prin intermediul acestui website.`,
+        content: `Euromarket WWE SRL, cu sediul în B-dul Poitiers 50B, Iași - 700669, România, este operatorul datelor dumneavoastră personale colectate prin intermediul acestui website.`,
       },
       {
         title: "2. Datele pe Care le Colectăm",
@@ -133,10 +133,10 @@ Pentru a exercita aceste drepturi, contactați-ne la: info@euromarket-ro.com`,
       {
         title: "8. Contact",
         content: `Pentru orice întrebări privind această politică de confidențialitate sau datele dumneavoastră personale, vă rugăm să contactați:
-S.C. Euromarket SRL
-Bd. Poitier nr. 53, Iași - 700669, România
+Euromarket WWE SRL
+B-dul Poitiers 50B, Iași - 700669, România
 Email: info@euromarket-ro.com
-Telefon: +4 (0232) 233693`,
+Telefon: +4 (0232) 233 693`,
       },
     ],
   },

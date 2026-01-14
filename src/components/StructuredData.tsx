@@ -5,7 +5,7 @@ export default function StructuredData() {
       {
         "@type": "Organization",
         "@id": "https://www.euromarket-ro.com/#organization",
-        name: "S.C. Euromarket SRL",
+        name: "Euromarket WWE SRL",
         url: "https://www.euromarket-ro.com",
         logo: {
           "@type": "ImageObject",
@@ -19,7 +19,7 @@ export default function StructuredData() {
         },
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Bd. Poitier nr. 53",
+          streetAddress: "B-dul Poitiers 50B",
           addressLocality: "Iași",
           postalCode: "700669",
           addressCountry: "RO",
@@ -31,14 +31,14 @@ export default function StructuredData() {
         "@id": "https://www.euromarket-ro.com/#localbusiness",
         name: "Euromarket SRL",
         description:
-          "Experți în ingineria apei și apelor uzate din 1990. Proiectare, construcție și mentenanță stații de tratare a apei.",
+          "Experți în ingineria apei și apelor uzate din 1995. Proiectare, construcție și mentenanță stații de tratare a apei.",
         url: "https://www.euromarket-ro.com",
         telephone: "+40-232-233693",
         email: "info@euromarket-ro.com",
-        foundingDate: "1990",
+        foundingDate: "1995",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Bd. Poitier nr. 53",
+          streetAddress: "B-dul Poitiers 50B",
           addressLocality: "Iași",
           postalCode: "700669",
           addressRegion: "Iași",

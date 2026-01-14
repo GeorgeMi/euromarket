@@ -17,15 +17,15 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.euromarket-ro.com"),
   title: {
-    default: "Euromarket",
-    template: "%s | Euromarket",
+    default: "Euromarket WWE",
+    template: "%s | Euromarket WWE",
   },
   icons: {
     icon: "/images/favicon.png",
     apple: "/images/favicon.png",
   },
   description:
-    "S.C. Euromarket SRL - Experți în ingineria apei și apelor uzate din 1990. Proiectare, construcție și mentenanță stații de tratare a apei în România.",
+    "Euromarket WWE SRL - Experți în ingineria apei și apelor uzate din 1995. Proiectare, construcție și mentenanță stații de tratare a apei în România.",
   keywords: [
     "tratare ape uzate",
     "statie epurare",
@@ -61,10 +61,10 @@ export const metadata: Metadata = {
     siteName: "Euromarket SRL",
     title: "Euromarket SRL | Experți în Ingineria Apei",
     description:
-      "Experți în ingineria apei și apelor uzate din 1990. Proiectare, construcție și mentenanță stații de tratare.",
+      "Experți în ingineria apei și apelor uzate din 1995. Proiectare, construcție și mentenanță stații de tratare.",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Euromarket SRL - Water & Wastewater Engineering",
@@ -74,8 +74,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Euromarket SRL | Experți în Ingineria Apei",
-    description: "Experți în ingineria apei și apelor uzate din 1990.",
-    images: ["/images/og-image.jpg"],
+    description: "Experți în ingineria apei și apelor uzate din 1995.",
+    images: ["/images/og-image.png"],
   },
   verification: {
     // google: "your-google-verification-code",

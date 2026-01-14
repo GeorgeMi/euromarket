@@ -20,22 +20,22 @@ export default function Contact() {
       id: "office",
       icon: MapPin,
       title: t.contact.info.office,
-      details: ["Bd. Poitier nr. 53", "Iași - 700669, Romania"],
+      details: [t.contact.info.addressLine1, t.contact.info.addressLine2],
       linkType: "map" as const,
-      href: "https://share.google/vmyqbeXcTEzC2WTeO",
+      href: "https://maps.app.goo.gl/yx8QQRLUn6FrQgKn9",
     },
     {
       id: "phone",
       icon: Phone,
       title: t.contact.info.phone,
-      details: ["+4 (0232) 233693", "+4 (0232) 243405"],
+      details: ["+4 (0232) 233 693", "+4 (0232) 243 405"],
       linkType: "phone" as const,
     },
     {
       id: "fax",
       icon: Printer,
       title: t.contact.info.fax,
-      details: ["+4 (0232) 220273"],
+      details: ["+4 (0232) 220 273"],
       linkType: "none" as const,
     },
     {
@@ -122,31 +122,41 @@ export default function Contact() {
                   <h4 className="font-semibold text-foreground mb-1">
                     {item.title}
                   </h4>
-                  {item.details.map((detail, i) => {
-                    const getHref = () => {
-                      if (item.linkType === "email") return `mailto:${detail}`;
-                      if (item.linkType === "phone") return `tel:${detail.replace(/[^+\d]/g, "")}`;
-                      if (item.linkType === "map") return item.href;
-                      return undefined;
-                    };
-                    const href = getHref();
-                    return (
-                      <p key={i} className="text-muted text-sm">
-                        {href ? (
-                          <a
-                            href={href}
-                            target={item.linkType === "map" ? "_blank" : undefined}
-                            rel={item.linkType === "map" ? "noopener noreferrer" : undefined}
-                            className="hover:text-primary transition-colors"
-                          >
-                            {detail}
-                          </a>
-                        ) : (
-                          detail
-                        )}
-                      </p>
-                    );
-                  })}
+                  {item.linkType === "map" ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted text-sm hover:text-primary transition-colors block"
+                    >
+                      {item.details.map((detail, i) => (
+                        <span key={i} className="block">{detail}</span>
+                      ))}
+                    </a>
+                  ) : (
+                    item.details.map((detail, i) => {
+                      const getHref = () => {
+                        if (item.linkType === "email") return `mailto:${detail}`;
+                        if (item.linkType === "phone") return `tel:${detail.replace(/[^+\d]/g, "")}`;
+                        return undefined;
+                      };
+                      const href = getHref();
+                      return (
+                        <p key={i} className="text-muted text-sm">
+                          {href ? (
+                            <a
+                              href={href}
+                              className="hover:text-primary transition-colors"
+                            >
+                              {detail}
+                            </a>
+                          ) : (
+                            detail
+                          )}
+                        </p>
+                      );
+                    })
+                  )}
                 </div>
               </motion.div>
             ))}

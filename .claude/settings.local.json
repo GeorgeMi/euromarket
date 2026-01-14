@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(smbclient:*)",
+      "Bash(nc -zv:*)",
+      "Bash(curl:*)",
+      "Bash(brew install:*)",
+      "Bash(sshpass:*)",
+      "Bash(nmblookup:*)",
+      "Bash(for folder in \"www\" \"htdocs\" \"public_html\" \"web\" \"site\" \"html\" \"Website\" \"Site\")",
+      "Bash(do echo \"=== Checking $folder ===\" smbclient //192.168.1.1/Server --option='client min protocol=NT1' -U 'Admin%euromark' -c \"cd \"\"$folder\"\"; ls\")",
+      "Bash(for port in 21 990 2121 2222 8021)",
+      "Bash(do)",
+      "Bash(done)",
+      "Bash(for port in 2082 2083 2086 2087 8080 8443 10000)",
+      "Bash(dig:*)",
+      "Bash(host:*)",
+      "Bash(ls:*)",
+      "Bash(npm run build:*)"
+    ]
+  }
+}

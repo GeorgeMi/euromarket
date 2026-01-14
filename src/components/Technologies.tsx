@@ -12,6 +12,12 @@ import {
   Settings2,
   Cylinder,
   ArrowDownUp,
+  Monitor,
+  Cloud,
+  Activity,
+  Cpu,
+  MonitorSmartphone,
+  FileBarChart,
 } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
 
@@ -57,6 +63,15 @@ export default function Technologies() {
     { name: "DAF", full: t.technologies.processes.daf },
     { name: "RO", full: t.technologies.processes.ro },
     { name: "UF", full: t.technologies.processes.uf },
+  ];
+
+  const automation = [
+    { id: "scada", icon: Monitor, ...t.technologies.automation.scada },
+    { id: "cloud", icon: Cloud, ...t.technologies.automation.cloud },
+    { id: "monitoring", icon: Activity, ...t.technologies.automation.monitoring },
+    { id: "plc", icon: Cpu, ...t.technologies.automation.plc },
+    { id: "hmi", icon: MonitorSmartphone, ...t.technologies.automation.hmi },
+    { id: "reporting", icon: FileBarChart, ...t.technologies.automation.reporting },
   ];
 
   return (
@@ -132,6 +147,37 @@ export default function Technologies() {
                 <p className="text-sm font-medium text-foreground leading-tight">
                   {item.name}
                 </p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Automation & Control */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-16"
+        >
+          <h3 className="text-xl font-bold text-foreground mb-8 text-center">
+            {t.technologies.automationTitle}
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {automation.map((item, index) => (
+              <motion.div
+                key={item.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="group bg-white rounded-2xl p-6 card-shadow hover:card-shadow-lg transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
+                  <item.icon className="w-7 h-7 text-accent" />
+                </div>
+                <h4 className="text-lg font-bold text-foreground mb-2">{item.title}</h4>
+                <p className="text-muted text-sm leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
           </div>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de Vizită - Euromarket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(145deg, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            gap: 50px;
+        }
+
+        .card {
+            width: 480px;
+            aspect-ratio: 1.75;
+            border-radius: 12px;
+            box-shadow:
+                0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 20px 40px -8px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* ========== FRONT CARD ========== */
+        .card-front {
+            background: #ffffff;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .front-main {
+            flex: 1;
+            padding: 36px 40px 28px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-section {
+            margin-bottom: auto;
+        }
+
+        .logo {
+            height: 42px;
+            opacity: 0.95;
+        }
+
+        .person-section {
+            margin-bottom: 8px;
+        }
+
+        .person-name {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 28px;
+            font-weight: 500;
+            color: #1e293b;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+
+        .person-title {
+            font-size: 11px;
+            font-weight: 600;
+            color: #0369a1;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            margin-bottom: 4px;
+        }
+
+        .person-credentials {
+            font-size: 12px;
+            font-weight: 400;
+            color: #94a3b8;
+            letter-spacing: 0.3px;
+        }
+
+        .front-footer {
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+            padding: 18px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .contact-icon {
+            width: 36px;
+            height: 36px;
+            background: #0369a1;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-icon svg {
+            width: 16px;
+            height: 16px;
+            fill: white;
+        }
+
+        .contact-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-label {
+            font-size: 9px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #94a3b8;
+            margin-bottom: 2px;
+        }
+
+        .contact-value {
+            font-size: 13px;
+            font-weight: 500;
+            color: #334155;
+        }
+
+        /* ========== BACK CARD ========== */
+        .card-back {
+            background: #ffffff;
+            height: 100%;
+            display: flex;
+            position: relative;
+        }
+
+        .back-accent {
+            width: 8px;
+            background: linear-gradient(180deg, #0369a1 0%, #0c4a6e 100%);
+        }
+
+        .back-content {
+            flex: 1;
+            padding: 32px 36px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .company-header {
+            margin-bottom: 24px;
+        }
+
+        .company-name {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 26px;
+            font-weight: 500;
+            color: #1e293b;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .company-tagline {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            color: #0369a1;
+            text-transform: uppercase;
+        }
+
+        .info-section {
+            display: flex;
+            gap: 32px;
+            flex: 1;
+        }
+
+        .info-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .info-column.primary {
+            flex: 1;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-label {
+            font-size: 9px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #94a3b8;
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            font-size: 13px;
+            font-weight: 400;
+            color: #334155;
+            line-height: 1.5;
+        }
+
+        .info-value a {
+            color: #0369a1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .info-value a:hover {
+            text-decoration: underline;
+        }
+
+        .info-row {
+            display: flex;
+            gap: 24px;
+        }
+
+        .qr-section {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        .qr-wrapper {
+            padding: 8px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+        }
+
+        .qr-code {
+            width: 80px;
+            height: 80px;
+            display: block;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 520px) {
+            .card {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .front-main {
+                padding: 28px 28px 20px;
+            }
+
+            .front-footer {
+                padding: 14px 28px;
+                flex-direction: column;
+                gap: 12px;
+                align-items: flex-start;
+            }
+
+            .person-name {
+                font-size: 24px;
+            }
+
+            .back-content {
+                padding: 24px;
+            }
+
+            .info-section {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .qr-section {
+                justify-content: center;
+            }
+        }
+
+        /* ========== PRINT ========== */
+        @media print {
+            body {
+                background: white;
+                padding: 20px;
+            }
+
+            .card {
+                box-shadow: 0 0 0 1px #e2e8f0;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Front Card -->
+    <div class="card">
+        <div class="card-front">
+            <div class="front-main">
+                <div class="logo-section">
+                    <img src="public/images/logo.png" alt="Euromarket" class="logo">
+                </div>
+
+                <div class="person-section">
+                    <h1 class="person-name">Irinel Miron</h1>
+                    <p class="person-title">Managing Director</p>
+                    <p class="person-credentials">Dipl. Ing. MBA</p>
+                </div>
+            </div>
+
+            <div class="front-footer">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-text">
+                        <span class="contact-label">Mobile</span>
+                        <span class="contact-value">+40 722 193 517</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-text">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">office@euromarket-ro.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back Card -->
+    <div class="card">
+        <div class="card-back">
+            <div class="back-accent"></div>
+            <div class="back-content">
+                <div class="company-header">
+                    <h2 class="company-name">Euromarket</h2>
+                    <p class="company-tagline">Water & Wastewater Engineering</p>
+                </div>
+
+                <div class="info-section">
+                    <div class="info-column primary">
+                        <div class="info-item">
+                            <span class="info-label">Address</span>
+                            <span class="info-value">B-dul Poitiers 50B<br>700669 Iași, România</span>
+                        </div>
+
+                        <div class="info-row">
+                            <div class="info-item">
+                                <span class="info-label">Phone</span>
+                                <span class="info-value">+40 232 220 273</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Fax</span>
+                                <span class="info-value">+40 232 233 693</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-label">Website</span>
+                            <span class="info-value">
+                                <a href="https://www.euromarket-ro.com">www.euromarket-ro.com</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="qr-section">
+                        <div class="qr-wrapper">
+                            <img src="public/images/qr-code.png" alt="QR Code" class="qr-code">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

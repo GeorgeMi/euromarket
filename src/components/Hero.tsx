@@ -19,7 +19,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <Image
-        src="/images/intro-bg.jpg"
+        src="/images/hero-bg.png"
         alt="Water treatment facility"
         fill
         priority
