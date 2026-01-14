@@ -9,11 +9,11 @@ export default function Footer() {
   const { t, language } = useLanguage();
 
   const quickLinks = [
-    { href: "#applications", label: t.nav.applications },
-    { href: "#about", label: t.nav.about },
-    { href: "#services", label: t.nav.services },
-    { href: "#portfolio", label: t.nav.portfolio },
-    { href: "#contact", label: t.nav.contact },
+    { href: "/#applications", label: t.nav.applications },
+    { href: "/#about", label: t.nav.about },
+    { href: "/#services", label: t.nav.services },
+    { href: "/#portfolio", label: t.nav.portfolio },
+    { href: "/#contact", label: t.nav.contact },
   ];
 
   return (
@@ -21,18 +21,18 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
-          <div className="space-y-6">
+          <div className="space-y-6 flex flex-col items-center text-center">
             <Image
               src="/images/logo_white.png"
               alt="Euromarket"
-              width={200}
-              height={50}
-              className="h-12 w-auto"
+              width={280}
+              height={70}
+              className="h-16 w-auto"
             />
             <p className="text-white/80 leading-relaxed">
               {t.footer.description}
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center">
               <a
                 href="mailto:info@euromarket-ro.com"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
@@ -83,16 +83,15 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-6">{t.footer.contactUs}</h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+              <li className="flex items-center gap-3">
+                <MapPin className="w-5 h-5 text-accent flex-shrink-0" />
                 <a
-                  href="https://share.google/vmyqbeXcTEzC2WTeO"
+                  href="https://maps.app.goo.gl/yx8QQRLUn6FrQgKn9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-white transition-colors"
                 >
-                  Bd. Poitier nr. 53<br />
-                  Iași - 700669, Romania
+                  {t.contact.info.addressLine1}, {t.contact.info.addressLine2}
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -101,12 +100,12 @@ export default function Footer() {
                   href="tel:+40232233693"
                   className="text-white/80 hover:text-white transition-colors"
                 >
-                  +4 (0232) 233693
+                  +4 (0232) 233 693
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Printer className="w-5 h-5 text-accent flex-shrink-0" />
-                <span className="text-white/80">+4 (0232) 220273</span>
+                <span className="text-white/80">+4 (0232) 220 273</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-accent flex-shrink-0" />
