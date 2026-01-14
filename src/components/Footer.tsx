@@ -1,7 +1,8 @@
 "use client";
 
-import { Droplets, Mail, Phone, MapPin, Printer } from "lucide-react";
+import { Mail, Phone, MapPin, Printer } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Footer() {
@@ -21,10 +22,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-6">
-            <div className="flex items-center gap-3">
-              <Droplets className="w-10 h-10 text-accent" />
-              <span className="text-2xl font-bold">Euromarket</span>
-            </div>
+            <Image
+              src="/images/logo_white.png"
+              alt="Euromarket"
+              width={200}
+              height={50}
+              className="h-12 w-auto"
+            />
             <p className="text-white/80 leading-relaxed">
               {t.footer.description}
             </p>

@@ -17,8 +17,12 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.euromarket-ro.com"),
   title: {
-    default: "Euromarket SRL | Experți în Ingineria Apei și Apelor Uzate",
-    template: "%s | Euromarket SRL",
+    default: "Euromarket",
+    template: "%s | Euromarket",
+  },
+  icons: {
+    icon: "/images/favicon.png",
+    apple: "/images/favicon.png",
   },
   description:
     "S.C. Euromarket SRL - Experți în ingineria apei și apelor uzate din 1990. Proiectare, construcție și mentenanță stații de tratare a apei în România.",
