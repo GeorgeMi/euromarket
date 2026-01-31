@@ -276,7 +276,7 @@ export default function Portfolio() {
           className="text-center mt-12"
         >
           <a
-            href="#contact"
+            href="/#contact"
             className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             <span>{t.portfolio.cta}</span>

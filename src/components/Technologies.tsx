@@ -193,7 +193,7 @@ export default function Technologies() {
         >
           <p className="text-muted mb-4">{t.technologies.cta}</p>
           <a
-            href="#contact"
+            href="/#contact"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-all duration-300"
           >
             {t.technologies.ctaButton}

@@ -106,7 +106,7 @@ export default function Services() {
           className="text-center mt-16"
         >
           <a
-            href="#contact"
+            href="/#contact"
             className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary font-semibold rounded-xl hover:bg-white/90 transition-all duration-300 shadow-xl"
           >
             {t.services.cta}

@@ -91,13 +91,13 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <Link
-              href="#portfolio"
+              href="/#portfolio"
               className="px-8 py-4 bg-white text-primary font-semibold rounded-xl hover:bg-white/90 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1"
             >
               {t.hero.cta1}
             </Link>
             <Link
-              href="#contact"
+              href="/#contact"
               className="px-8 py-4 bg-transparent text-white font-semibold rounded-xl border-2 border-white/30 hover:bg-white/10 transition-all duration-300"
             >
               {t.hero.cta2}

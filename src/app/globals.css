@@ -66,6 +66,7 @@ body {
 /* Section styling */
 .section-padding {
   padding: 5rem 1rem;
+  scroll-margin-top: 5rem;
 }
 
 @media (min-width: 768px) {
