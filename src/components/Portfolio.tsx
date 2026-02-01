@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Users, Factory, X, ChevronLeft, ChevronRight, Wrench, Monitor } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 
 const containerVariants = {
@@ -44,6 +44,8 @@ export default function Portfolio() {
   const { t } = useLanguage();
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
+  const modalRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
 
   const projects: Project[] = [
     {
@@ -67,7 +69,7 @@ export default function Portfolio() {
         { value: "600 m³/zi", label: t.portfolio.stats.capacity },
       ],
       media: [
-        { type: "image", src: "/images/municipal_600_mc.png" },
+        { type: "image", src: "/images/municipal_600_mc.webp" },
       ],
     },
     {
@@ -124,7 +126,7 @@ export default function Portfolio() {
       ],
       media: [
         { type: "image", src: "/images/scada_2.jpeg" },
-        { type: "image", src: "/images/scada_1.png" },
+        { type: "image", src: "/images/scada_1.webp" },
       ],
     },
   ];
@@ -139,21 +141,66 @@ export default function Portfolio() {
     setCurrentMediaIndex(0);
   };
 
-  const nextMedia = () => {
-    if (selectedProject) {
-      setCurrentMediaIndex((prev) =>
-        prev === selectedProject.media.length - 1 ? 0 : prev + 1
-      );
-    }
-  };
-
-  const prevMedia = () => {
+  const prevMedia = useCallback(() => {
     if (selectedProject) {
       setCurrentMediaIndex((prev) =>
         prev === 0 ? selectedProject.media.length - 1 : prev - 1
       );
     }
-  };
+  }, [selectedProject]);
+
+  const nextMedia = useCallback(() => {
+    if (selectedProject) {
+      setCurrentMediaIndex((prev) =>
+        prev === selectedProject.media.length - 1 ? 0 : prev + 1
+      );
+    }
+  }, [selectedProject]);
+
+  // Keyboard navigation and focus trap
+  useEffect(() => {
+    if (!selectedProject) return;
+
+    // Focus close button when modal opens
+    closeButtonRef.current?.focus();
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        closeModal();
+      } else if (e.key === 'ArrowLeft') {
+        prevMedia();
+      } else if (e.key === 'ArrowRight') {
+        nextMedia();
+      } else if (e.key === 'Tab') {
+        // Focus trap
+        const modal = modalRef.current;
+        if (!modal) return;
+
+        const focusableElements = modal.querySelectorAll<HTMLElement>(
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        );
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+
+        if (e.shiftKey && document.activeElement === firstElement) {
+          e.preventDefault();
+          lastElement?.focus();
+        } else if (!e.shiftKey && document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement?.focus();
+        }
+      }
+    };
+
+    // Prevent body scroll when modal is open
+    document.body.style.overflow = 'hidden';
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [selectedProject, prevMedia, nextMedia]);
 
   return (
     <section id="portfolio" className="section-padding bg-white">
@@ -296,6 +343,10 @@ export default function Portfolio() {
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
           >
             <motion.div
+              ref={modalRef}
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="modal-title"
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
@@ -304,7 +355,9 @@ export default function Portfolio() {
             >
               {/* Close Button */}
               <button
+                ref={closeButtonRef}
                 onClick={closeModal}
+                aria-label="Închide galeria"
                 className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/50 hover:bg-black/70 flex items-center justify-center text-white transition-colors"
               >
                 <X size={24} />
@@ -336,12 +389,14 @@ export default function Portfolio() {
                   <>
                     <button
                       onClick={prevMedia}
+                      aria-label="Imaginea anterioară"
                       className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/50 hover:bg-black/70 flex items-center justify-center text-white transition-colors"
                     >
                       <ChevronLeft size={28} />
                     </button>
                     <button
                       onClick={nextMedia}
+                      aria-label="Imaginea următoare"
                       className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/50 hover:bg-black/70 flex items-center justify-center text-white transition-colors"
                     >
                       <ChevronRight size={28} />
@@ -373,7 +428,7 @@ export default function Portfolio() {
                     {selectedProject.category}
                   </span>
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">
+                <h3 id="modal-title" className="text-2xl font-bold text-foreground mb-4">
                   {selectedProject.title}
                 </h3>
                 <div className="flex gap-8">

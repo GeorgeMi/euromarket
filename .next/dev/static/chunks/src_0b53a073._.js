@@ -211,6 +211,7 @@ const translations = {
                 sent: "Message Sent",
                 success: "Your message has been sent successfully.",
                 error: "Could not send message. Please try again or contact us directly.",
+                rateLimit: "Too many attempts. Please wait a minute and try again.",
                 errors: {
                     nameRequired: "Name is required",
                     nameMin: "Name must be at least 2 characters",
@@ -530,6 +531,7 @@ const translations = {
                 sent: "Mesaj trimis",
                 success: "Mesajul a fost trimis cu succes.",
                 error: "Nu s-a putut trimite mesajul. Încercați din nou sau contactați-ne direct.",
+                rateLimit: "Prea multe încercări. Așteptați un minut și încercați din nou.",
                 errors: {
                     nameRequired: "Numele este obligatoriu",
                     nameMin: "Numele trebuie să aibă cel puțin 2 caractere",

@@ -21,7 +21,7 @@ export default function Contact() {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error' | 'rateLimit'>('idle');
 
   const contactInfo = [
     {
@@ -77,8 +77,8 @@ export default function Contact() {
 
   const validateEmail = (email: string): string => {
     if (!email.trim()) return t.contact.form.errors.emailRequired;
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) return t.contact.form.errors.emailInvalid;
+    const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/;
+    if (!emailRegex.test(email) || email.length > 254) return t.contact.form.errors.emailInvalid;
     return "";
   };
 
@@ -120,6 +120,8 @@ export default function Contact() {
         setSubmitStatus('success');
         setFormData({ name: "", phone: "", email: "", subject: "", message: "" });
         setErrors({ name: "", phone: "", email: "", message: "" });
+      } else if (response.status === 429) {
+        setSubmitStatus('rateLimit');
       } else {
         setSubmitStatus('error');
       }
@@ -389,6 +391,17 @@ export default function Contact() {
                 >
                   <XCircle className="w-5 h-5 text-red-600 flex-shrink-0" />
                   <p className="text-red-800 text-sm font-medium">{t.contact.form.error}</p>
+                </motion.div>
+              )}
+
+              {submitStatus === 'rateLimit' && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="flex items-center gap-3 p-4 bg-orange-50 border border-orange-200 rounded-xl mb-4"
+                >
+                  <XCircle className="w-5 h-5 text-orange-600 flex-shrink-0" />
+                  <p className="text-orange-800 text-sm font-medium">{t.contact.form.rateLimit}</p>
                 </motion.div>
               )}
 
