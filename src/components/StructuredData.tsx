@@ -31,11 +31,11 @@ export default function StructuredData() {
         "@id": "https://www.euromarket-ro.com/#localbusiness",
         name: "Euromarket SRL",
         description:
-          "Experți în ingineria apei și apelor uzate din 1995. Proiectare, construcție și mentenanță stații de tratare a apei.",
+          "Proiectare și construcție stații de epurare ape uzate în România. Tehnologii MBBR, SBR, MBR. Peste 500 proiecte din 1996.",
         url: "https://www.euromarket-ro.com",
         telephone: "+40-232-233693",
         email: "info@euromarket-ro.com",
-        foundingDate: "1995",
+        foundingDate: "1996",
         address: {
           "@type": "PostalAddress",
           streetAddress: "B-dul Poitiers 50B",
@@ -87,14 +87,14 @@ export default function StructuredData() {
       {
         "@type": "Service",
         "@id": "https://www.euromarket-ro.com/#service-wastewater",
-        name: "Tratarea Apelor Uzate",
+        name: "Stații Epurare Ape Uzate",
         description:
-          "Stații de epurare cu tehnologii avansate MBBR, SBR și MBR pentru comunități de toate dimensiunile.",
+          "Proiectare și construcție stații de epurare municipale și industriale. Tehnologii MBBR, SBR, MBR pentru comunități de toate dimensiunile.",
         provider: {
           "@id": "https://www.euromarket-ro.com/#organization",
         },
         areaServed: "Romania",
-        serviceType: "Wastewater Treatment",
+        serviceType: "Statie Epurare",
       },
     ],
   };

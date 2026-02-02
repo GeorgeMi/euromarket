@@ -95,6 +95,7 @@ export default function Portfolio() {
       ],
       media: [
         { type: "video", src: "/videos/daf.mp4" },
+        { type: "video", src: "/videos/daf_2.mp4" },
         { type: "image", src: "/images/industrial_1.jpeg" },
         { type: "image", src: "/images/industrial_2.jpeg" },
       ],

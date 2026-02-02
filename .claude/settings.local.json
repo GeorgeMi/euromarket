@@ -16,7 +16,8 @@
       "Bash(dig:*)",
       "Bash(host:*)",
       "Bash(ls:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(git add:*)"
     ]
   }
 }

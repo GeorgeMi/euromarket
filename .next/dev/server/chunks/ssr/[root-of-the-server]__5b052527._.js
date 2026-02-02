@@ -215,11 +215,11 @@ function StructuredData() {
                 "@type": "LocalBusiness",
                 "@id": "https://www.euromarket-ro.com/#localbusiness",
                 name: "Euromarket SRL",
-                description: "Experți în ingineria apei și apelor uzate din 1995. Proiectare, construcție și mentenanță stații de tratare a apei.",
+                description: "Proiectare și construcție stații de epurare ape uzate în România. Tehnologii MBBR, SBR, MBR. Peste 500 proiecte din 1996.",
                 url: "https://www.euromarket-ro.com",
                 telephone: "+40-232-233693",
                 email: "info@euromarket-ro.com",
-                foundingDate: "1995",
+                foundingDate: "1996",
                 address: {
                     "@type": "PostalAddress",
                     streetAddress: "B-dul Poitiers 50B",
@@ -279,13 +279,13 @@ function StructuredData() {
             {
                 "@type": "Service",
                 "@id": "https://www.euromarket-ro.com/#service-wastewater",
-                name: "Tratarea Apelor Uzate",
-                description: "Stații de epurare cu tehnologii avansate MBBR, SBR și MBR pentru comunități de toate dimensiunile.",
+                name: "Stații Epurare Ape Uzate",
+                description: "Proiectare și construcție stații de epurare municipale și industriale. Tehnologii MBBR, SBR, MBR pentru comunități de toate dimensiunile.",
                 provider: {
                     "@id": "https://www.euromarket-ro.com/#organization"
                 },
                 areaServed: "Romania",
-                serviceType: "Wastewater Treatment"
+                serviceType: "Statie Epurare"
             }
         ]
     };
@@ -376,25 +376,26 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$LanguageContex
 const metadata = {
     metadataBase: new URL("https://www.euromarket-ro.com"),
     title: {
-        default: "Euromarket WWE",
+        default: "Stații Epurare și Tratare Apă | Euromarket WWE România",
         template: "%s | Euromarket WWE"
     },
     icons: {
         icon: "/images/favicon.png",
         apple: "/images/favicon.png"
     },
-    description: "Euromarket WWE SRL - Experți în ingineria apei și apelor uzate din 1995. Proiectare, construcție și mentenanță stații de tratare a apei în România.",
+    description: "Proiectare și construcție stații de epurare ape uzate în România. Tehnologii MBBR, SBR, MBR. Peste 500 proiecte finalizate din 1996. Solicită ofertă gratuită!",
     keywords: [
-        "tratare ape uzate",
         "statie epurare",
-        "tratare apa",
-        "inginerie apa",
-        "wastewater treatment",
-        "water engineering",
+        "statii epurare",
+        "statie epurare ape uzate",
+        "tratare ape uzate",
+        "statie tratare apa",
+        "epurare ape uzate",
         "MBBR",
         "SBR",
-        "Romania",
-        "Iași",
+        "MBR",
+        "statie epurare pret",
+        "constructor statii epurare Romania",
         "Euromarket"
     ],
     authors: [
@@ -420,22 +421,22 @@ const metadata = {
         locale: "ro_RO",
         alternateLocale: "en_US",
         url: "https://www.euromarket-ro.com",
-        siteName: "Euromarket SRL",
-        title: "Euromarket SRL | Experți în Ingineria Apei",
-        description: "Experți în ingineria apei și apelor uzate din 1995. Proiectare, construcție și mentenanță stații de tratare.",
+        siteName: "Euromarket WWE SRL",
+        title: "Stații Epurare Ape Uzate | Euromarket WWE România",
+        description: "Proiectăm și construim stații de epurare în România. Tehnologii moderne MBBR, SBR, MBR. Peste 500 proiecte din 1996.",
         images: [
             {
                 url: "/images/og-image.png",
                 width: 1200,
                 height: 630,
-                alt: "Euromarket SRL - Water & Wastewater Engineering"
+                alt: "Euromarket - Stații Epurare și Tratare Apă România"
             }
         ]
     },
     twitter: {
         card: "summary_large_image",
-        title: "Euromarket SRL | Experți în Ingineria Apei",
-        description: "Experți în ingineria apei și apelor uzate din 1995.",
+        title: "Stații Epurare Ape Uzate | Euromarket WWE România",
+        description: "Proiectare și construcție stații de epurare în România. Tehnologii MBBR, SBR, MBR.",
         images: [
             "/images/og-image.png"
         ]
@@ -453,12 +454,12 @@ function RootLayout({ children }) {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("head", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$StructuredData$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/app/layout.tsx",
-                    lineNumber: 96,
+                    lineNumber: 97,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/layout.tsx",
-                lineNumber: 95,
+                lineNumber: 96,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
@@ -469,47 +470,47 @@ function RootLayout({ children }) {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navbar$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                     fileName: "[project]/src/app/layout.tsx",
-                                    lineNumber: 101,
+                                    lineNumber: 102,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
                                     children: children
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/layout.tsx",
-                                    lineNumber: 102,
+                                    lineNumber: 103,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                     fileName: "[project]/src/app/layout.tsx",
-                                    lineNumber: 103,
+                                    lineNumber: 104,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/layout.tsx",
-                            lineNumber: 100,
+                            lineNumber: 101,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$CookieConsent$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/app/layout.tsx",
-                            lineNumber: 105,
+                            lineNumber: 106,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/layout.tsx",
-                    lineNumber: 99,
+                    lineNumber: 100,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/layout.tsx",
-                lineNumber: 98,
+                lineNumber: 99,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/layout.tsx",
-        lineNumber: 94,
+        lineNumber: 95,
         columnNumber: 5
     }, this);
 }

@@ -17,7 +17,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.euromarket-ro.com"),
   title: {
-    default: "Euromarket WWE",
+    default: "Stații Epurare și Tratare Apă | Euromarket WWE România",
     template: "%s | Euromarket WWE",
   },
   icons: {
@@ -25,18 +25,19 @@ export const metadata: Metadata = {
     apple: "/images/favicon.png",
   },
   description:
-    "Euromarket WWE SRL - Experți în ingineria apei și apelor uzate din 1995. Proiectare, construcție și mentenanță stații de tratare a apei în România.",
+    "Proiectare și construcție stații de epurare ape uzate în România. Tehnologii MBBR, SBR, MBR. Peste 500 proiecte finalizate din 1996. Solicită ofertă gratuită!",
   keywords: [
-    "tratare ape uzate",
     "statie epurare",
-    "tratare apa",
-    "inginerie apa",
-    "wastewater treatment",
-    "water engineering",
+    "statii epurare",
+    "statie epurare ape uzate",
+    "tratare ape uzate",
+    "statie tratare apa",
+    "epurare ape uzate",
     "MBBR",
     "SBR",
-    "Romania",
-    "Iași",
+    "MBR",
+    "statie epurare pret",
+    "constructor statii epurare Romania",
     "Euromarket",
   ],
   authors: [{ name: "Euromarket SRL" }],
@@ -58,23 +59,23 @@ export const metadata: Metadata = {
     locale: "ro_RO",
     alternateLocale: "en_US",
     url: "https://www.euromarket-ro.com",
-    siteName: "Euromarket SRL",
-    title: "Euromarket SRL | Experți în Ingineria Apei",
+    siteName: "Euromarket WWE SRL",
+    title: "Stații Epurare Ape Uzate | Euromarket WWE România",
     description:
-      "Experți în ingineria apei și apelor uzate din 1995. Proiectare, construcție și mentenanță stații de tratare.",
+      "Proiectăm și construim stații de epurare în România. Tehnologii moderne MBBR, SBR, MBR. Peste 500 proiecte din 1996.",
     images: [
       {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Euromarket SRL - Water & Wastewater Engineering",
+        alt: "Euromarket - Stații Epurare și Tratare Apă România",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Euromarket SRL | Experți în Ingineria Apei",
-    description: "Experți în ingineria apei și apelor uzate din 1995.",
+    title: "Stații Epurare Ape Uzate | Euromarket WWE România",
+    description: "Proiectare și construcție stații de epurare în România. Tehnologii MBBR, SBR, MBR.",
     images: ["/images/og-image.png"],
   },
   verification: {

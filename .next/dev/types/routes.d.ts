@@ -5,7 +5,7 @@ type AppRoutes = "/" | "/privacy"
 type AppRouteHandlerRoutes = "/api/contact"
 type PageRoutes = never
 type LayoutRoutes = "/"
-type RedirectRoutes = never
+type RedirectRoutes = "/aplicatii.htm" | "/contact.htm" | "/despre.htm" | "/echipamente.htm" | "/index.htm" | "/portofoliu.htm" | "/servicii.htm"
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes | AppRouteHandlerRoutes
 
@@ -13,7 +13,14 @@ type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRo
 interface ParamMap {
   "/": {}
   "/api/contact": {}
+  "/aplicatii.htm": {}
+  "/contact.htm": {}
+  "/despre.htm": {}
+  "/echipamente.htm": {}
+  "/index.htm": {}
+  "/portofoliu.htm": {}
   "/privacy": {}
+  "/servicii.htm": {}
 }
 
 

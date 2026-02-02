@@ -17,11 +17,11 @@ const translations = {
             contact: "Contact"
         },
         hero: {
-            badge: "Since 1995 — International Operations",
+            badge: "Since 1996 — International Operations",
             title1: "Your Experts in",
             title2: "Water & Wastewater",
             title3: "Engineering",
-            description: "Established in 1995, Euromarket WWE SRL is a reputable, highly competent, and professional water and wastewater engineering company with international operations in Europe and the Middle East.",
+            description: "Established in 1996, Euromarket WWE SRL is a reputable, highly competent, and professional water and wastewater engineering company with international operations in Europe and the Middle East.",
             cta1: "View Our Work",
             cta2: "Get in Touch",
             scroll: "Scroll to explore",
@@ -68,8 +68,8 @@ const translations = {
         },
         about: {
             subtitle: "About Us",
-            title: "Engineering Excellence Since 1995",
-            description: "Euromarket WWE SRL was established in 1995 when the construction of wastewater treatment plants was a new and growing market in Cyprus and the Middle East. In 1995, the Romania branch was established, consolidating our position in the European market. ISO 9001:2000 certified, we have completed over 500 projects across Europe and the Middle East. Our own chemical laboratory ensures precise quality control, while continuous R&D investments keep us at the forefront of water treatment technology. Health and Safety remain fundamental principles in all our operations.",
+            title: "Engineering Excellence Since 1996",
+            description: "Euromarket WWE SRL was established in 1996 when the construction of wastewater treatment plants was a new and growing market in Cyprus and the Middle East. In 1996, the Romania branch was established, consolidating our position in the European market. ISO 9001:2000 certified, we have completed over 500 projects across Europe and the Middle East. Our own chemical laboratory ensures precise quality control, while continuous R&D investments keep us at the forefront of water treatment technology. Health and Safety remain fundamental principles in all our operations.",
             highlights: [
                 "ISO 9001:2000 Certified",
                 "In-house Chemical Laboratory",
@@ -225,7 +225,7 @@ const translations = {
             }
         },
         footer: {
-            description: "Your experts in water and wastewater engineering since 1995. Delivering innovative solutions for a sustainable future.",
+            description: "Your experts in water and wastewater engineering since 1996. Delivering innovative solutions for a sustainable future.",
             quickLinks: "Quick Links",
             ourServices: "Our Services",
             contactUs: "Contact Us",
@@ -337,11 +337,11 @@ const translations = {
             contact: "Contact"
         },
         hero: {
-            badge: "Din 1995 — Operațiuni Internaționale",
+            badge: "Din 1996 — Operațiuni Internaționale",
             title1: "Experții Tăi în",
             title2: "Ingineria Apei",
             title3: "și Apelor Uzate",
-            description: "Fondată în 1995, Euromarket WWE SRL este o companie de prestigiu, înalt competentă și profesionistă în domeniul ingineriei apei și apelor uzate, cu operațiuni internaționale în Europa și Orientul Mijlociu.",
+            description: "Fondată în 1996, Euromarket WWE SRL este o companie de prestigiu, înalt competentă și profesionistă în domeniul ingineriei apei și apelor uzate, cu operațiuni internaționale în Europa și Orientul Mijlociu.",
             cta1: "Vezi proiectele",
             cta2: "Contactează-ne",
             scroll: "Derulează pentru a explora",
@@ -388,8 +388,8 @@ const translations = {
         },
         about: {
             subtitle: "Despre noi",
-            title: "Excelență în Inginerie din 1995",
-            description: "Euromarket WWE SRL a fost înființată în 1995, când construcția stațiilor de tratare a apelor uzate era o piață nouă și în creștere în Cipru și Orientul Mijlociu. În 1995 a luat ființă filiala din România, consolidând poziția firmei pe piața europeană. Certificați ISO 9001:2000, am finalizat peste 500 de proiecte în Europa și Orientul Mijlociu. Laboratorul nostru chimic propriu asigură controlul precis al calității, iar investițiile continue în cercetare și dezvoltare ne mențin în fruntea tehnologiei de tratare a apei. Sănătatea și Siguranța rămân principii fundamentale în toate operațiunile noastre.",
+            title: "Excelență în Inginerie din 1996",
+            description: "Euromarket WWE SRL a fost înființată în 1996, când construcția stațiilor de tratare a apelor uzate era o piață nouă și în creștere în Cipru și Orientul Mijlociu. În 1996 a luat ființă filiala din România, consolidând poziția firmei pe piața europeană. Certificați ISO 9001:2000, am finalizat peste 500 de proiecte în Europa și Orientul Mijlociu. Laboratorul nostru chimic propriu asigură controlul precis al calității, iar investițiile continue în cercetare și dezvoltare ne mențin în fruntea tehnologiei de tratare a apei. Sănătatea și Siguranța rămân principii fundamentale în toate operațiunile noastre.",
             highlights: [
                 "Certificare ISO 9001:2000",
                 "Laborator chimic propriu",
@@ -545,7 +545,7 @@ const translations = {
             }
         },
         footer: {
-            description: "Experții tăi în ingineria apei și apelor uzate din 1995. Livrăm soluții inovatoare pentru un viitor sustenabil.",
+            description: "Experții tăi în ingineria apei și apelor uzate din 1996. Livrăm soluții inovatoare pentru un viitor sustenabil.",
             quickLinks: "Link-uri rapide",
             ourServices: "Serviciile noastre",
             contactUs: "Contactează-ne",

@@ -25,6 +25,46 @@ const nextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      // Redirect old .htm pages to new site
+      {
+        source: "/index.htm",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/contact.htm",
+        destination: "/#contact",
+        permanent: true,
+      },
+      {
+        source: "/echipamente.htm",
+        destination: "/#technologies",
+        permanent: true,
+      },
+      {
+        source: "/servicii.htm",
+        destination: "/#services",
+        permanent: true,
+      },
+      {
+        source: "/despre.htm",
+        destination: "/#about",
+        permanent: true,
+      },
+      {
+        source: "/portofoliu.htm",
+        destination: "/#portfolio",
+        permanent: true,
+      },
+      {
+        source: "/aplicatii.htm",
+        destination: "/#applications",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
