@@ -21,7 +21,7 @@ const translations = {
             title1: "Your Experts in",
             title2: "Water & Wastewater",
             title3: "Engineering",
-            description: "Established in 1996, Euromarket WWE SRL is a reputable, highly competent, and professional water and wastewater engineering company with international operations in Europe and the Middle East.",
+            description: "Euromarket WWE SRL is a reputable, highly competent, and professional water and wastewater engineering company with international operations in Europe and the Middle East.",
             cta1: "View Our Work",
             cta2: "Get in Touch",
             scroll: "Scroll to explore",
@@ -69,7 +69,7 @@ const translations = {
         about: {
             subtitle: "About Us",
             title: "Engineering Excellence Since 1996",
-            description: "Euromarket WWE SRL was established in 1996 when the construction of wastewater treatment plants was a new and growing market in Cyprus and the Middle East. In 1996, the Romania branch was established, consolidating our position in the European market. ISO 9001:2000 certified, we have completed over 500 projects across Europe and the Middle East. Our own chemical laboratory ensures precise quality control, while continuous R&D investments keep us at the forefront of water treatment technology. Health and Safety remain fundamental principles in all our operations.",
+            description: "Euromarket Group was established in 1996 when the construction of wastewater treatment plants was a new and growing market in Cyprus and the Middle East. In 1996, the Romania branch was established, consolidating our position in the European market. ISO 9001:2000 certified, we have completed over 500 projects across Europe and the Middle East. Our own chemical laboratory ensures precise quality control, while continuous R&D investments keep us at the forefront of water treatment technology. Health and Safety remain fundamental principles in all our operations.",
             highlights: [
                 "ISO 9001:2000 Certified",
                 "In-house Chemical Laboratory",
@@ -341,7 +341,7 @@ const translations = {
             title1: "Experții Tăi în",
             title2: "Ingineria Apei",
             title3: "și Apelor Uzate",
-            description: "Fondată în 1996, Euromarket WWE SRL este o companie de prestigiu, înalt competentă și profesionistă în domeniul ingineriei apei și apelor uzate, cu operațiuni internaționale în Europa și Orientul Mijlociu.",
+            description: "Euromarket WWE SRL este o companie de prestigiu, înalt competentă și profesionistă în domeniul ingineriei apei și apelor uzate, cu operațiuni internaționale în Europa și Orientul Mijlociu.",
             cta1: "Vezi proiectele",
             cta2: "Contactează-ne",
             scroll: "Derulează pentru a explora",
@@ -389,7 +389,7 @@ const translations = {
         about: {
             subtitle: "Despre noi",
             title: "Excelență în Inginerie din 1996",
-            description: "Euromarket WWE SRL a fost înființată în 1996, când construcția stațiilor de tratare a apelor uzate era o piață nouă și în creștere în Cipru și Orientul Mijlociu. În 1996 a luat ființă filiala din România, consolidând poziția firmei pe piața europeană. Certificați ISO 9001:2000, am finalizat peste 500 de proiecte în Europa și Orientul Mijlociu. Laboratorul nostru chimic propriu asigură controlul precis al calității, iar investițiile continue în cercetare și dezvoltare ne mențin în fruntea tehnologiei de tratare a apei. Sănătatea și Siguranța rămân principii fundamentale în toate operațiunile noastre.",
+            description: "Euromarket Group a fost înființat în 1996, când construcția stațiilor de tratare a apelor uzate era o piață nouă și în creștere în Cipru și Orientul Mijlociu. În 1996 a luat ființă filiala din România, consolidând poziția firmei pe piața europeană. Certificați ISO 9001:2000, am finalizat peste 500 de proiecte în Europa și Orientul Mijlociu. Laboratorul nostru chimic propriu asigură controlul precis al calității, iar investițiile continue în cercetare și dezvoltare ne mențin în fruntea tehnologiei de tratare a apei. Sănătatea și Siguranța rămân principii fundamentale în toate operațiunile noastre.",
             highlights: [
                 "Certificare ISO 9001:2000",
                 "Laborator chimic propriu",

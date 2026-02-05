@@ -4,14 +4,15 @@
 type AppRoutes = "/" | "/privacy"
 type AppRouteHandlerRoutes = "/api/contact"
 type PageRoutes = never
-type LayoutRoutes = "/"
-type RedirectRoutes = "/aplicatii.htm" | "/contact.htm" | "/despre.htm" | "/echipamente.htm" | "/index.htm" | "/portofoliu.htm" | "/servicii.htm"
+type LayoutRoutes = "/" | "/privacy"
+type RedirectRoutes = "/[[...path]].htm" | "/aplicatii.htm" | "/contact.htm" | "/despre.htm" | "/echipamente.htm" | "/index.htm" | "/portofoliu.htm" | "/servicii.htm" | "/termeni" | "/terms"
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes | AppRouteHandlerRoutes
 
 
 interface ParamMap {
   "/": {}
+  "/[[...path]].htm": {}
   "/api/contact": {}
   "/aplicatii.htm": {}
   "/contact.htm": {}
@@ -21,6 +22,8 @@ interface ParamMap {
   "/portofoliu.htm": {}
   "/privacy": {}
   "/servicii.htm": {}
+  "/termeni": {}
+  "/terms": {}
 }
 
 
@@ -28,6 +31,7 @@ export type ParamsOf<Route extends Routes> = ParamMap[Route]
 
 interface LayoutSlotMap {
   "/": never
+  "/privacy": never
 }
 
 

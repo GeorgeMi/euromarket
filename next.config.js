@@ -63,6 +63,23 @@ const nextConfig = {
         destination: "/#applications",
         permanent: true,
       },
+      // Catch-all for any other old .htm pages
+      {
+        source: "/:path*.htm",
+        destination: "/",
+        permanent: true,
+      },
+      // Redirect /terms to privacy (if old site had it)
+      {
+        source: "/terms",
+        destination: "/privacy",
+        permanent: true,
+      },
+      {
+        source: "/termeni",
+        destination: "/privacy",
+        permanent: true,
+      },
     ];
   },
 };

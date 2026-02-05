@@ -86,3 +86,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   // @ts-ignore
   type __Unused = __Check
 }
+
+// Validate ../../src/app/privacy/layout.tsx
+{
+  type __IsExpected<Specific extends LayoutConfig<"/privacy">> = Specific
+  const handler = {} as typeof import("../../src/app/privacy/layout.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}

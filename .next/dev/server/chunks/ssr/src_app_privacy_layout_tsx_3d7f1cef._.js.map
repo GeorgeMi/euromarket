@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/george/projects/euromarket/src/app/privacy/layout.tsx"],"sourcesContent":["import type { Metadata } from \"next\";\n\nexport const metadata: Metadata = {\n  title: \"Politica de Confidențialitate\",\n  description: \"Politica de confidențialitate și protecția datelor personale - Euromarket WWE SRL\",\n  alternates: {\n    canonical: \"https://www.euromarket-ro.com/privacy\",\n  },\n};\n\nexport default function PrivacyLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return children;\n}\n"],"names":[],"mappings":";;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;IACb,YAAY;QACV,WAAW;IACb;AACF;AAEe,SAAS,cAAc,EACpC,QAAQ,EAGT;IACC,OAAO;AACT"}}]
+}

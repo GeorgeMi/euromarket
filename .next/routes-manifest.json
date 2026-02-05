@@ -54,6 +54,24 @@
       "destination": "/#applications",
       "statusCode": 308,
       "regex": "^(?!/_next)/aplicatii\\.htm(?:/)?$"
+    },
+    {
+      "source": "/:path*.htm",
+      "destination": "/",
+      "statusCode": 308,
+      "regex": "^(?!/_next)(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?\\.htm(?:/)?$"
+    },
+    {
+      "source": "/terms",
+      "destination": "/privacy",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/terms(?:/)?$"
+    },
+    {
+      "source": "/termeni",
+      "destination": "/privacy",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/termeni(?:/)?$"
     }
   ],
   "headers": [
