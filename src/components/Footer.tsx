@@ -24,7 +24,7 @@ export default function Footer() {
           <div className="space-y-6 flex flex-col items-center text-center">
             <Image
               src="/images/logo_white.png"
-              alt="Euromarket"
+              alt="Euromarket - Constructor stații epurare ape uzate România"
               width={280}
               height={70}
               className="h-16 w-auto"

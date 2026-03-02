@@ -20,7 +20,7 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <Image
         src="/images/hero-bg.webp"
-        alt="Water treatment facility"
+        alt="Stație de epurare și tratare ape uzate - Euromarket România"
         fill
         priority
         className="object-cover object-center"

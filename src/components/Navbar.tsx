@@ -32,7 +32,7 @@ export default function Navbar() {
           <Link href="/" className="flex-shrink-0">
             <Image
               src="/images/logo.png"
-              alt="Euromarket SRL"
+              alt="Euromarket - Stații de epurare și tratare apă România"
               width={200}
               height={56}
               className="h-14 w-auto"

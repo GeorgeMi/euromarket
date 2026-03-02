@@ -254,7 +254,7 @@ export default function Portfolio() {
                 ) : (
                   <Image
                     src={project.media[0].src}
-                    alt={project.title}
+                    alt={`${project.title} - ${project.category} | Euromarket`}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -379,7 +379,7 @@ export default function Portfolio() {
                 ) : (
                   <Image
                     src={selectedProject.media[currentMediaIndex].src}
-                    alt={selectedProject.title}
+                    alt={`${selectedProject.title} - ${selectedProject.category} | Euromarket`}
                     fill
                     className="object-contain"
                   />

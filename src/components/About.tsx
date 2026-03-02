@@ -44,7 +44,7 @@ export default function About() {
             <div className="relative rounded-2xl overflow-hidden card-shadow-lg">
               <Image
                 src="/images/office.jpg"
-                alt="Euromarket Office"
+                alt="Sediul Euromarket - proiectare și construcție stații de epurare Iași"
                 width={600}
                 height={450}
                 className="w-full h-auto object-cover"
