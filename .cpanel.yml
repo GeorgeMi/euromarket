@@ -1,7 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/euromark/nodeapp
-    - /bin/rsync -a --exclude='.git' --exclude='.cpanel.yml' --exclude='node_modules' --exclude='.env*' ./ $DEPLOYPATH/
-    - /bin/rsync -a --delete .next/ $DEPLOYPATH/.next/
-    - /bin/rm -f $DEPLOYPATH/public/sitemap.xml
