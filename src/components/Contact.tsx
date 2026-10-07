@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, Clock, Printer, CheckCircle, XCircle } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Contact() {
@@ -284,6 +285,7 @@ export default function Contact() {
                     type="text"
                     id="name"
                     name="name"
+                    maxLength={100}
                     value={formData.name}
                     onChange={handleChange}
                     onBlur={handleBlur}
@@ -303,6 +305,7 @@ export default function Contact() {
                     type="tel"
                     id="phone"
                     name="phone"
+                    maxLength={30}
                     value={formData.phone}
                     onChange={handleChange}
                     onBlur={handleBlur}
@@ -325,6 +328,7 @@ export default function Contact() {
                     type="email"
                     id="email"
                     name="email"
+                    maxLength={254}
                     value={formData.email}
                     onChange={handleChange}
                     onBlur={handleBlur}
@@ -344,6 +348,7 @@ export default function Contact() {
                     type="text"
                     id="subject"
                     name="subject"
+                    maxLength={150}
                     value={formData.subject}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-white"
@@ -362,6 +367,7 @@ export default function Contact() {
                 <textarea
                   id="message"
                   name="message"
+                  maxLength={5000}
                   value={formData.message}
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -427,6 +433,14 @@ export default function Contact() {
                   </>
                 )}
               </button>
+
+              <p className="mt-4 text-sm text-muted">
+                {t.contact.form.privacyNotice}{" "}
+                <Link href="/privacy" className="text-primary underline underline-offset-2 hover:text-primary-dark">
+                  {t.contact.form.privacyLink}
+                </Link>
+                .
+              </p>
             </form>
           </motion.div>
         </div>

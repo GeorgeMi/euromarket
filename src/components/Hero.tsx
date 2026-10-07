@@ -19,7 +19,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <Image
-        src="/images/hero-bg.webp"
+        src="/images/statie-epurare-ape-uzate.webp"
         alt="Stație de epurare și tratare ape uzate - Euromarket România"
         fill
         priority
@@ -65,6 +65,15 @@ export default function Hero() {
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="text-accent text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase mb-6"
+          >
+            {t.hero.heading}
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-8"
           >
@@ -73,7 +82,7 @@ export default function Hero() {
             <span className="text-accent">{t.hero.title2}</span>
             <br />
             {t.hero.title3}
-          </motion.h1>
+          </motion.p>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}

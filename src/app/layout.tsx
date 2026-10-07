@@ -7,6 +7,7 @@ import PageWrapper from "@/components/PageWrapper";
 import CookieConsent from "@/components/CookieConsent";
 import StructuredData from "@/components/StructuredData";
 import { LanguageProvider } from "@/lib/LanguageContext";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -15,7 +16,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.euromarket-ro.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Stații Epurare și Tratare Apă | Euromarket WWE România",
     template: "%s | Euromarket WWE",
@@ -62,9 +63,9 @@ export const metadata: Metadata = {
     "epurare ape uzate Romania",
     "Euromarket",
   ],
-  authors: [{ name: "Euromarket SRL" }],
-  creator: "Euromarket SRL",
-  publisher: "Euromarket SRL",
+  authors: [{ name: SITE_NAME }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
   robots: {
     index: true,
     follow: true,
@@ -80,8 +81,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ro_RO",
     alternateLocale: "en_US",
-    url: "https://www.euromarket-ro.com",
-    siteName: "Euromarket WWE SRL",
+    url: SITE_URL,
+    siteName: SITE_NAME,
     title: "Stații Epurare Ape Uzate | Euromarket WWE România",
     description:
       "Proiectăm și construim stații de epurare în România. Tehnologii moderne MBBR, SBR, MBR. Peste 500 proiecte din 1996.",
@@ -104,7 +105,7 @@ export const metadata: Metadata = {
     // google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://www.euromarket-ro.com",
+    canonical: SITE_URL,
   },
 };
 

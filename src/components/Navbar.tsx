@@ -41,7 +41,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center space-x-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -64,7 +64,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center gap-2">
+          <div className="lg:hidden flex items-center gap-2">
             <button
               onClick={toggleLanguage}
               className="p-2 rounded-lg text-primary hover:bg-primary/10 transition-colors"
@@ -90,7 +90,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t shadow-xl"
+            className="lg:hidden bg-white border-t shadow-xl"
           >
             <div className="px-4 py-4 space-y-2">
               {navLinks.map((link) => (

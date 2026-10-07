@@ -14,6 +14,102 @@
       "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
     },
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "euromarket-ro.com"
+        }
+      ],
+      "destination": "https://www.euromarket-ro.com/:path*",
+      "statusCode": 308,
+      "regex": "^(?!/_next)(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+    },
+    {
+      "source": "/images/hero-bg.webp",
+      "destination": "/images/statie-epurare-ape-uzate.webp",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/images/hero-bg\\.webp(?:/)?$"
+    },
+    {
+      "source": "/images/office.jpg",
+      "destination": "/images/sediu-euromarket-iasi.jpg",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/images/office\\.jpg(?:/)?$"
+    },
+    {
+      "source": "/images/municipal_600_mc.webp",
+      "destination": "/images/statie-epurare-municipala-600-mc.webp",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/images/municipal_600_mc\\.webp(?:/)?$"
+    },
+    {
+      "source": "/images/sbr.jpeg",
+      "destination": "/images/statie-epurare-industriala-sbr.jpeg",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/images/sbr\\.jpeg(?:/)?$"
+    },
+    {
+      "source": "/images/industrial_1.jpeg",
+      "destination": "/images/hala-statie-epurare-industriala-daf.jpeg",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/images/industrial_1\\.jpeg(?:/)?$"
+    },
+    {
+      "source": "/images/industrial_2.jpeg",
+      "destination": "/images/unitate-flotatie-daf.jpeg",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/images/industrial_2\\.jpeg(?:/)?$"
+    },
+    {
+      "source": "/images/productie.jpeg",
+      "destination": "/images/decantor-inox-statie-epurare.jpeg",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/images/productie\\.jpeg(?:/)?$"
+    },
+    {
+      "source": "/images/productie_1.jpeg",
+      "destination": "/images/montaj-bazin-inox-statie-epurare.jpeg",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/images/productie_1\\.jpeg(?:/)?$"
+    },
+    {
+      "source": "/images/productie_2.jpeg",
+      "destination": "/images/amplasare-statie-epurare-containerizata.jpeg",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/images/productie_2\\.jpeg(?:/)?$"
+    },
+    {
+      "source": "/images/productie_3.jpeg",
+      "destination": "/images/statie-epurare-containerizata-euromarket.jpeg",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/images/productie_3\\.jpeg(?:/)?$"
+    },
+    {
+      "source": "/images/productie_4.jpeg",
+      "destination": "/images/fabricatie-unitati-flotatie-daf.jpeg",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/images/productie_4\\.jpeg(?:/)?$"
+    },
+    {
+      "source": "/images/productie_5.jpeg",
+      "destination": "/images/transport-echipamente-statie-epurare.jpeg",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/images/productie_5\\.jpeg(?:/)?$"
+    },
+    {
+      "source": "/images/scada_2.jpeg",
+      "destination": "/images/scada-monitorizare-statie-epurare.jpeg",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/images/scada_2\\.jpeg(?:/)?$"
+    },
+    {
+      "source": "/images/scada_1.webp",
+      "destination": "/images/tablou-automatizare-statie-epurare.webp",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/images/scada_1\\.webp(?:/)?$"
+    },
+    {
       "source": "/index.htm",
       "destination": "/",
       "statusCode": 308,
@@ -93,17 +189,40 @@
         {
           "key": "X-XSS-Protection",
           "value": "1; mode=block"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'"
         }
       ],
       "regex": "^(?:/(.*))(?:/)?$"
     }
   ],
+  "onMatchHeaders": [],
   "rewrites": {
     "beforeFiles": [],
     "afterFiles": [],
     "fallback": []
   },
-  "dynamicRoutes": [],
+  "dynamicRoutes": [
+    {
+      "page": "/[section]/[slug]",
+      "regex": "^/([^/]+?)/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPsection": "nxtPsection",
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/(?<nxtPsection>[^/]+?)/(?<nxtPslug>[^/]+?)(?:/)?$"
+    }
+  ],
   "staticRoutes": [
     {
       "page": "/",
@@ -140,6 +259,12 @@
       "regex": "^/privacy(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/privacy(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
     }
   ],
   "dataRoutes": [],

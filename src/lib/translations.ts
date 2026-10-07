@@ -10,6 +10,7 @@ export const translations = {
     },
     hero: {
       badge: "Since 1996 — International Operations",
+      heading: "Euromarket WWE – wastewater and water treatment plants in Romania",
       title1: "Your Experts in",
       title2: "Water & Wastewater",
       title3: "Engineering",
@@ -26,7 +27,7 @@ export const translations = {
     },
     applications: {
       subtitle: "What We Do",
-      title: "Our Applications",
+      title: "Wastewater and Water Treatment Plants",
       description:
         "Comprehensive water and wastewater engineering solutions tailored to your specific needs.",
       sewage: {
@@ -67,7 +68,7 @@ export const translations = {
     },
     services: {
       subtitle: "Our Services",
-      title: "Comprehensive Solutions",
+      title: "Wastewater Treatment Plant Services",
       description:
         "From design to operation, we provide end-to-end services for all your water and wastewater engineering needs.",
       cta: "Discuss Your Project",
@@ -109,7 +110,7 @@ export const translations = {
     },
     contact: {
       subtitle: "Get in Touch",
-      title: "Contact Us",
+      title: "Contact and Quotes for Treatment Plants",
       description:
         "Ready to start your project? Get in touch with our team of experts and let's discuss your water engineering needs.",
       info: {
@@ -134,6 +135,8 @@ export const translations = {
         message: "Your Message",
         messagePlaceholder: "Tell us about your project...",
         submit: "Send Message",
+        privacyNotice: "For information about how we process personal data, see our",
+        privacyLink: "Privacy Policy",
         sending: "Sending...",
         sent: "Message Sent",
         success: "Your message has been sent successfully.",
@@ -158,17 +161,17 @@ export const translations = {
       contactUs: "Contact Us",
       copyright: "Euromarket WWE SRL. All rights reserved.",
       tagline: "Water & Wastewater Engineering Excellence",
-      services: [
-        "Sewage Treatment",
-        "Water Treatment",
-        "Industrial Wastewater",
-        "Operation & Maintenance",
-        "Consulting & Training",
-      ],
+      services: {
+        sewage: "Sewage Treatment",
+        water: "Water Treatment",
+        industrial: "Industrial Wastewater",
+        operation: "Operation & Maintenance",
+        consulting: "Consulting & Training",
+      },
     },
     technologies: {
       subtitle: "Technologies & Equipment",
-      title: "Advanced Treatment Technologies",
+      title: "Wastewater and Water Treatment Technologies",
       description: "We design and manufacture a complete range of equipment and systems using proven technologies for water and wastewater treatment applications.",
       processTitle: "Process Technologies",
       equipmentTitle: "Manufactured Equipment",
@@ -217,6 +220,31 @@ export const translations = {
         experience: { title: "500+ Projects", description: "Proven track record across Europe, Middle East" },
       },
     },
+    imageAlts: {
+      municipalPlant: "600 m³/day municipal wastewater treatment plant",
+      sbrPlant: "SBR tank and technical container of an industrial wastewater treatment plant",
+      dafHall: "Technical hall of an industrial wastewater treatment plant with DAF flotation",
+      dafUnit: "Dissolved air flotation (DAF) unit and process piping",
+      clarifier: "Stainless steel clarifier for a wastewater treatment plant",
+      tankAssembly: "Assembly of a stainless steel tank for a wastewater treatment plant",
+      containerDelivery: "Crane placement of a containerised treatment plant",
+      containerPlant: "Containerised wastewater treatment plant manufactured by Euromarket",
+      dafWorkshop: "DAF flotation units being manufactured in the Euromarket workshop",
+      equipmentTransport: "Transport of wastewater treatment plant equipment",
+      scadaScreen: "SCADA interface monitoring an SBR wastewater treatment plant",
+      controlPanel: "Euromarket automation control panel with HMI touch screen",
+      headquarters: "Euromarket headquarters in Iași",
+    },
+    detail: {
+      home: "Home",
+      sections: { aplicatii: "Applications", servicii: "Services", tehnologii: "Technologies" },
+      related: { aplicatii: "Other applications", servicii: "Other services", tehnologii: "Other technologies" },
+      learnMore: "Learn more",
+      faqTitle: "Frequently asked questions",
+      ctaTitle: "Discuss your project with our engineers",
+      ctaText: "Tell us about your project and we will propose the right technical solution.",
+      ctaButton: "Request a quote",
+    },
   },
   ro: {
     nav: {
@@ -229,6 +257,7 @@ export const translations = {
     },
     hero: {
       badge: "Din 1996 — Operațiuni Internaționale",
+      heading: "Euromarket WWE – stații de epurare și tratare a apei în România",
       title1: "Experții Tăi în",
       title2: "Ingineria Apei",
       title3: "și Apelor Uzate",
@@ -245,7 +274,7 @@ export const translations = {
     },
     applications: {
       subtitle: "Ce facem",
-      title: "Aplicațiile Noastre",
+      title: "Stații de Epurare și Tratare a Apei",
       description:
         "Soluții complete de inginerie a apei și apelor uzate adaptate nevoilor tale specifice.",
       sewage: {
@@ -286,7 +315,7 @@ export const translations = {
     },
     services: {
       subtitle: "Serviciile noastre",
-      title: "Soluții Complete",
+      title: "Servicii pentru Stații de Epurare",
       description:
         "De la proiectare la operare, oferim servicii complete pentru toate nevoile tale de inginerie a apei și apelor uzate.",
       cta: "Discută proiectul tău",
@@ -328,7 +357,7 @@ export const translations = {
     },
     contact: {
       subtitle: "Contactează-ne",
-      title: "Contact",
+      title: "Contact și Ofertă pentru Stații de Epurare",
       description:
         "Pregătit să începi proiectul? Ia legătura cu echipa noastră de experți și hai să discutăm nevoile tale de inginerie a apei.",
       info: {
@@ -353,6 +382,8 @@ export const translations = {
         message: "Mesajul tău",
         messagePlaceholder: "Spune-ne despre proiectul tău...",
         submit: "Trimite mesaj",
+        privacyNotice: "Pentru informații despre prelucrarea datelor personale, consultă",
+        privacyLink: "Politica de confidențialitate",
         sending: "Se trimite...",
         sent: "Mesaj trimis",
         success: "Mesajul a fost trimis cu succes.",
@@ -377,17 +408,17 @@ export const translations = {
       contactUs: "Contactează-ne",
       copyright: "Euromarket WWE SRL. Toate drepturile rezervate.",
       tagline: "Excelență în ingineria apei",
-      services: [
-        "Tratare ape uzate",
-        "Tratarea apei",
-        "Ape uzate industriale",
-        "Operare și mentenanță",
-        "Consultanță și training",
-      ],
+      services: {
+        sewage: "Tratare ape uzate",
+        water: "Tratarea apei",
+        industrial: "Ape uzate industriale",
+        operation: "Operare și mentenanță",
+        consulting: "Consultanță și training",
+      },
     },
     technologies: {
       subtitle: "Tehnologii și echipamente",
-      title: "Tehnologii Avansate de Tratare",
+      title: "Tehnologii de Epurare și Tratare a Apei",
       description: "Proiectăm și fabricăm o gamă completă de echipamente și sisteme utilizând tehnologii dovedite pentru aplicații de tratare a apei și apelor uzate.",
       processTitle: "Tehnologii de proces",
       equipmentTitle: "Echipamente fabricate",
@@ -435,6 +466,31 @@ export const translations = {
         turnkey: { title: "Soluții la cheie", description: "Servicii complete de proiectare, construcție și operare" },
         experience: { title: "500+ proiecte", description: "Experiență dovedită în Europa și Orientul Mijlociu" },
       },
+    },
+    imageAlts: {
+      municipalPlant: "Stație de epurare municipală de 600 m³/zi",
+      sbrPlant: "Bazin SBR și container tehnic pentru o stație de epurare industrială",
+      dafHall: "Hală tehnică a unei stații de epurare industriale cu flotație DAF",
+      dafUnit: "Unitate de flotație cu aer dizolvat (DAF) și conducte de proces",
+      clarifier: "Decantor din oțel inoxidabil pentru stație de epurare",
+      tankAssembly: "Montajul unui bazin din oțel inoxidabil pentru stație de epurare",
+      containerDelivery: "Amplasarea cu macaraua a unei stații de epurare containerizate",
+      containerPlant: "Stație de epurare containerizată fabricată de Euromarket",
+      dafWorkshop: "Unități de flotație DAF în fabricație în atelierul Euromarket",
+      equipmentTransport: "Transportul echipamentelor pentru stații de epurare",
+      scadaScreen: "Interfață SCADA pentru monitorizarea unei stații de epurare SBR",
+      controlPanel: "Tablou de automatizare Euromarket cu panou tactil HMI",
+      headquarters: "Sediul Euromarket din Iași",
+    },
+    detail: {
+      home: "Acasă",
+      sections: { aplicatii: "Aplicații", servicii: "Servicii", tehnologii: "Tehnologii" },
+      related: { aplicatii: "Alte aplicații", servicii: "Alte servicii", tehnologii: "Alte tehnologii" },
+      learnMore: "Află mai multe",
+      faqTitle: "Întrebări frecvente",
+      ctaTitle: "Discută proiectul cu inginerii noștri",
+      ctaText: "Spune-ne despre proiectul tău și îți propunem soluția tehnică potrivită.",
+      ctaButton: "Solicită ofertă",
     },
   },
 } as const;

@@ -8,8 +8,11 @@ import {
   Cog,
   FlaskConical,
   GraduationCap,
+  ArrowRight,
 } from "lucide-react";
+import Link from "next/link";
 import { useLanguage } from "@/lib/LanguageContext";
+import { pathFor } from "@/lib/detailPages/paths";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -31,7 +34,7 @@ const cardVariants = {
 };
 
 export default function Services() {
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
 
   const services = [
     { id: "design", icon: Building2, ...t.services.items.design },
@@ -92,7 +95,14 @@ export default function Services() {
 
               {/* Content */}
               <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-              <p className="text-white/70 leading-relaxed text-justify">{service.description}</p>
+              <p className="text-white/70 leading-relaxed text-justify mb-6">{service.description}</p>
+              <Link
+                href={pathFor("servicii", service.id)}
+                className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all"
+              >
+                {t.detail.learnMore}
+                <ArrowRight size={18} />
+              </Link>
             </motion.div>
           ))}
         </motion.div>
@@ -105,12 +115,12 @@ export default function Services() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <a
+          <Link
             href="/#contact"
             className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary font-semibold rounded-xl hover:bg-white/90 transition-all duration-300 shadow-xl"
           >
             {t.services.cta}
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

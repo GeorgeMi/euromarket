@@ -5,6 +5,9 @@ node_modules/
 
 # Next.js
 out/
+# The production build in .next is committed for cPanel; dev and cache files are not.
+.next/dev/
+.next/cache/
 
 # Production
 build/

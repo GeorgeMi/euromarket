@@ -4,6 +4,15 @@ import { Mail, Phone, MapPin, Printer } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
+import { pathFor } from "@/lib/detailPages/paths";
+
+const FOOTER_SERVICES = [
+  { key: "sewage", href: pathFor("aplicatii", "sewage") },
+  { key: "water", href: pathFor("aplicatii", "water") },
+  { key: "industrial", href: pathFor("aplicatii", "industrial") },
+  { key: "operation", href: pathFor("servicii", "operation") },
+  { key: "consulting", href: pathFor("servicii", "consulting") },
+] as const;
 
 export default function Footer() {
   const { t, language } = useLanguage();
@@ -71,9 +80,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-6">{t.footer.ourServices}</h3>
             <ul className="space-y-3">
-              {t.footer.services.map((service, index) => (
-                <li key={`service-${index}`} className="text-white/70">
-                  {service}
+              {FOOTER_SERVICES.map(({ key, href }) => (
+                <li key={key}>
+                  <Link href={href} className="text-white/70 hover:text-white transition-colors">
+                    {t.footer.services[key]}
+                  </Link>
                 </li>
               ))}
             </ul>

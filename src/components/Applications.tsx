@@ -1,8 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Droplets, Factory, Waves } from "lucide-react";
+import { ArrowRight, Droplets, Factory, Waves } from "lucide-react";
+import Link from "next/link";
 import { useLanguage } from "@/lib/LanguageContext";
+import { pathFor } from "@/lib/detailPages/paths";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -100,7 +102,7 @@ export default function Applications() {
               </p>
 
               {/* Features */}
-              <ul className="space-y-2">
+              <ul className="space-y-2 mb-6">
                 {app.features.map((feature, idx) => (
                   <li
                     key={`${app.id}-feature-${idx}`}
@@ -111,6 +113,14 @@ export default function Applications() {
                   </li>
                 ))}
               </ul>
+
+              <Link
+                href={pathFor("aplicatii", app.id)}
+                className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+              >
+                {t.detail.learnMore}
+                <ArrowRight size={18} />
+              </Link>
             </motion.div>
           ))}
         </motion.div>

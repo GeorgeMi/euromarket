@@ -7,9 +7,28 @@
   "segmentPaths": [
     "/_tree",
     "/_full",
-    "/privacy/__PAGE__",
-    "/privacy",
-    "/_index",
-    "/_head"
-  ]
+    "/privacy/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/262c312bb5d1afefa398e2fcec0b194edf7d1699350d9ddc0854afd32c80fac4/$/privacy",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/privacy/page"
+    },
+    "isFallback": false
+  }
 }

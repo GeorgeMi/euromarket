@@ -1,0 +1,3 @@
+module.exports=[61080,a=>{"use strict";a.s(["default",0,function({children:a}){return a},"metadata",0,{title:"Politica de Confidențialitate",description:"Politica de confidențialitate și protecția datelor personale - Euromarket WWE SRL",alternates:{canonical:"https://www.euromarket-ro.com/privacy"}}])},7256,function(a){a.n(a.i(61080))}];
+
+//# sourceMappingURL=src_app_privacy_layout_tsx_1zckct_m4mgs9._.js.map

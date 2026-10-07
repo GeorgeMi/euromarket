@@ -19,7 +19,9 @@ import {
   MonitorSmartphone,
   FileBarChart,
 } from "lucide-react";
+import Link from "next/link";
 import { useLanguage } from "@/lib/LanguageContext";
+import { pathFor } from "@/lib/detailPages/paths";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -56,14 +58,11 @@ export default function Technologies() {
     { id: "upgrade", icon: Settings2, name: t.technologies.items.upgrade },
   ];
 
-  const processes = [
-    { name: "MBBR", full: t.technologies.processes.mbbr },
-    { name: "SBR", full: t.technologies.processes.sbr },
-    { name: "MBR", full: t.technologies.processes.mbr },
-    { name: "DAF", full: t.technologies.processes.daf },
-    { name: "RO", full: t.technologies.processes.ro },
-    { name: "UF", full: t.technologies.processes.uf },
-  ];
+  const processes = (["mbbr", "sbr", "mbr", "daf", "ro", "uf"] as const).map((id) => ({
+    name: id.toUpperCase(),
+    full: t.technologies.processes[id],
+    href: pathFor("tehnologii", id),
+  }));
 
   const automation = [
     { id: "scada", icon: Monitor, ...t.technologies.automation.scada },
@@ -115,10 +114,14 @@ export default function Technologies() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="group relative bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
-                <span className="text-3xl font-bold text-white">{process.name}</span>
-                <p className="text-white/80 text-xs mt-2 leading-tight">{process.full}</p>
+                <Link
+                  href={process.href}
+                  className="group relative block h-full bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                >
+                  <span className="text-3xl font-bold text-white">{process.name}</span>
+                  <p className="text-white/80 text-xs mt-2 leading-tight">{process.full}</p>
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -192,12 +195,12 @@ export default function Technologies() {
           className="mt-12 text-center"
         >
           <p className="text-muted mb-4">{t.technologies.cta}</p>
-          <a
+          <Link
             href="/#contact"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-all duration-300"
           >
             {t.technologies.ctaButton}
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

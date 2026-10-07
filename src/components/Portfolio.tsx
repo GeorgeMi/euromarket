@@ -3,8 +3,10 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Users, Factory, X, ChevronLeft, ChevronRight, Wrench, Monitor } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
+import type { TranslationKeys } from "@/lib/translations";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -25,10 +27,9 @@ const cardVariants = {
   },
 };
 
-type MediaItem = {
-  type: "video" | "image";
-  src: string;
-};
+type MediaItem =
+  | { type: "video"; src: string }
+  | { type: "image"; src: string; alt: keyof TranslationKeys["imageAlts"] };
 
 type Project = {
   id: string;
@@ -69,7 +70,7 @@ export default function Portfolio() {
         { value: "600 m³/zi", label: t.portfolio.stats.capacity },
       ],
       media: [
-        { type: "image", src: "/images/municipal_600_mc.webp" },
+        { type: "image", src: "/images/statie-epurare-municipala-600-mc.webp", alt: "municipalPlant" },
       ],
     },
     {
@@ -82,7 +83,7 @@ export default function Portfolio() {
       ],
       media: [
         { type: "video", src: "/videos/sbr.mp4" },
-        { type: "image", src: "/images/sbr.jpeg" },
+        { type: "image", src: "/images/statie-epurare-industriala-sbr.jpeg", alt: "sbrPlant" },
       ],
     },
     {
@@ -96,8 +97,8 @@ export default function Portfolio() {
       media: [
         { type: "video", src: "/videos/daf.mp4" },
         { type: "video", src: "/videos/daf_2.mp4" },
-        { type: "image", src: "/images/industrial_1.jpeg" },
-        { type: "image", src: "/images/industrial_2.jpeg" },
+        { type: "image", src: "/images/hala-statie-epurare-industriala-daf.jpeg", alt: "dafHall" },
+        { type: "image", src: "/images/unitate-flotatie-daf.jpeg", alt: "dafUnit" },
       ],
     },
     {
@@ -109,12 +110,12 @@ export default function Portfolio() {
         { value: "24/7", label: t.portfolio.stats.operation },
       ],
       media: [
-        { type: "image", src: "/images/productie.jpeg" },
-        { type: "image", src: "/images/productie_1.jpeg" },
-        { type: "image", src: "/images/productie_2.jpeg" },
-        { type: "image", src: "/images/productie_3.jpeg" },
-        { type: "image", src: "/images/productie_4.jpeg" },
-        { type: "image", src: "/images/productie_5.jpeg" },
+        { type: "image", src: "/images/decantor-inox-statie-epurare.jpeg", alt: "clarifier" },
+        { type: "image", src: "/images/montaj-bazin-inox-statie-epurare.jpeg", alt: "tankAssembly" },
+        { type: "image", src: "/images/amplasare-statie-epurare-containerizata.jpeg", alt: "containerDelivery" },
+        { type: "image", src: "/images/statie-epurare-containerizata-euromarket.jpeg", alt: "containerPlant" },
+        { type: "image", src: "/images/fabricatie-unitati-flotatie-daf.jpeg", alt: "dafWorkshop" },
+        { type: "image", src: "/images/transport-echipamente-statie-epurare.jpeg", alt: "equipmentTransport" },
       ],
     },
     {
@@ -126,8 +127,8 @@ export default function Portfolio() {
         { value: "24/7", label: t.portfolio.stats.operation },
       ],
       media: [
-        { type: "image", src: "/images/scada_2.jpeg" },
-        { type: "image", src: "/images/scada_1.webp" },
+        { type: "image", src: "/images/scada-monitorizare-statie-epurare.jpeg", alt: "scadaScreen" },
+        { type: "image", src: "/images/tablou-automatizare-statie-epurare.webp", alt: "controlPanel" },
       ],
     },
   ];
@@ -245,6 +246,7 @@ export default function Portfolio() {
                 {project.media[0].type === "video" ? (
                   <video
                     src={project.media[0].src}
+                    aria-label={project.title}
                     autoPlay
                     loop
                     muted
@@ -254,7 +256,7 @@ export default function Portfolio() {
                 ) : (
                   <Image
                     src={project.media[0].src}
-                    alt={`${project.title} - ${project.category} | Euromarket`}
+                    alt={t.imageAlts[project.media[0].alt]}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -323,13 +325,13 @@ export default function Portfolio() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center mt-12"
         >
-          <a
+          <Link
             href="/#contact"
             className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             <span>{t.portfolio.cta}</span>
             <ArrowRight size={20} />
-          </a>
+          </Link>
         </motion.div>
       </div>
 
@@ -369,6 +371,7 @@ export default function Portfolio() {
                 {selectedProject.media[currentMediaIndex].type === "video" ? (
                   <video
                     src={selectedProject.media[currentMediaIndex].src}
+                    aria-label={selectedProject.title}
                     autoPlay
                     loop
                     muted
@@ -379,7 +382,7 @@ export default function Portfolio() {
                 ) : (
                   <Image
                     src={selectedProject.media[currentMediaIndex].src}
-                    alt={`${selectedProject.title} - ${selectedProject.category} | Euromarket`}
+                    alt={t.imageAlts[selectedProject.media[currentMediaIndex].alt]}
                     fill
                     className="object-contain"
                   />
