@@ -96,3 +96,8 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+/* Set before first paint by SPLASH_INIT_SCRIPT (see SplashScreen.tsx). */
+.splash-seen .splash-overlay {
+  display: none;
+}

@@ -3,9 +3,9 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import PageWrapper from "@/components/PageWrapper";
 import CookieConsent from "@/components/CookieConsent";
 import StructuredData from "@/components/StructuredData";
+import { SPLASH_INIT_SCRIPT } from "@/lib/splash";
 import { LanguageProvider } from "@/lib/LanguageContext";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 
@@ -115,17 +115,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ro">
+    <html lang="ro" suppressHydrationWarning>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: SPLASH_INIT_SCRIPT }} />
         <StructuredData />
       </head>
       <body className={`${poppins.variable} font-sans antialiased`}>
         <LanguageProvider>
-          <PageWrapper>
-            <Navbar />
-            <main>{children}</main>
-            <Footer />
-          </PageWrapper>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
           <CookieConsent />
         </LanguageProvider>
       </body>

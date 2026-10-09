@@ -6,10 +6,12 @@ import WhyUs from "@/components/WhyUs";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
+import SplashScreen from "@/components/SplashScreen";
 
 export default function Home() {
   return (
     <>
+      <SplashScreen />
       <Hero />
       <Applications />
       <Technologies />
