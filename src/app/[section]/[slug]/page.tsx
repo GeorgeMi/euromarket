@@ -21,15 +21,21 @@ async function getPage(params: Props["params"]) {
   return page;
 }
 
+const OG_IMAGE = { url: "/images/og-image.png", width: 1200, height: 630 };
+
+// Google cuts titles at ~60 characters, so the brand suffix is added only when it still fits.
+const TITLE_SUFFIX = " | Euromarket WWE";
+const fullTitle = (title: string) => (title.length + TITLE_SUFFIX.length <= 60 ? title + TITLE_SUFFIX : title);
+
 // Metadata and JSON-LD use the Romanian content, which is what the server renders.
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const page = await getPage(params);
   const { metaTitle, metaDescription } = page.content.ro;
   const url = `${SITE_URL}${pagePath(page)}`;
-  const image = { url: "/images/og-image.png", width: 1200, height: 630, alt: metaTitle };
+  const image = { ...OG_IMAGE, alt: metaTitle };
 
   return {
-    title: metaTitle,
+    title: { absolute: fullTitle(metaTitle) },
     description: metaDescription,
     alternates: { canonical: url },
     openGraph: {
@@ -54,24 +60,32 @@ export default async function DetailPage({ params }: Props) {
     title: { ro: p.content.ro.title, en: p.content.en.title },
   }));
 
+  // The page's main entity is the Service; the FAQ is shown on the page but not marked up.
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["WebPage", "FAQPage"],
+        "@type": "WebPage",
         "@id": `${url}#webpage`,
         url,
         name: content.metaTitle,
         description: content.metaDescription,
         inLanguage: "ro-RO",
         isPartOf: { "@id": `${SITE_URL}/#website` },
-        about: { "@id": `${url}#service` },
+        about: { "@id": `${url}#mainentity` },
+        primaryImageOfPage: { "@id": `${url}#primaryimage` },
         breadcrumb: { "@id": `${url}#breadcrumb` },
-        mainEntity: content.faq.map(({ question, answer }) => ({
-          "@type": "Question",
-          name: question,
-          acceptedAnswer: { "@type": "Answer", text: answer },
-        })),
+        mainEntity: { "@id": `${url}#mainentity` },
+      },
+      {
+        "@type": "ImageObject",
+        "@id": `${url}#primaryimage`,
+        contentUrl: `${SITE_URL}${OG_IMAGE.url}`,
+        url: `${SITE_URL}${OG_IMAGE.url}`,
+        width: OG_IMAGE.width,
+        height: OG_IMAGE.height,
+        encodingFormat: "image/png",
+        representativeOfPage: true,
       },
       {
         "@type": "BreadcrumbList",
@@ -83,12 +97,14 @@ export default async function DetailPage({ params }: Props) {
       },
       {
         "@type": "Service",
-        "@id": `${url}#service`,
+        "@id": `${url}#mainentity`,
         name: content.title,
+        serviceType: content.title,
         description: content.metaDescription,
         provider: { "@id": `${SITE_URL}/#organization` },
         areaServed: { "@type": "Country", name: "Romania" },
         url,
+        mainEntityOfPage: { "@id": `${url}#webpage` },
       },
     ],
   };

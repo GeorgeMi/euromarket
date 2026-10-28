@@ -13,7 +13,7 @@ const structuredData = {
       description:
         "Proiectare și construcție stații de epurare ape uzate în România. Tehnologii MBBR, SBR, MBR. Peste 500 proiecte din 1996.",
       url: `${SITE_URL}/`,
-      logo: `${SITE_URL}/images/logo.png`,
+      logo: { "@id": `${SITE_URL}/#logo` },
       image: `${SITE_URL}/images/sediu-euromarket-iasi.jpg`,
       telephone: "+40232233693",
       email: "info@euromarket-ro.com",
@@ -41,6 +41,13 @@ const structuredData = {
         availableLanguage: ["Romanian", "English"],
       },
       areaServed: { "@type": "Country", name: "Romania" },
+    },
+    {
+      "@type": "ImageObject",
+      "@id": `${SITE_URL}/#logo`,
+      contentUrl: `${SITE_URL}/images/logo.png`,
+      url: `${SITE_URL}/images/logo.png`,
+      name: `Logo ${SITE_NAME}`,
     },
     {
       "@type": "WebSite",
