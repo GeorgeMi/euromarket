@@ -8,6 +8,8 @@ out/
 # The production build in .next is committed for cPanel; dev and cache files are not.
 .next/dev/
 .next/cache/
+# Written by the running server, not by the build.
+.next/server/route-cache/
 
 # Production
 build/
