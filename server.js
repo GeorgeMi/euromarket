@@ -1,5 +1,4 @@
 const { createServer } = require('http');
-const { parse } = require('url');
 const next = require('next');
 
 const dev = false;
@@ -19,8 +18,8 @@ app.prepare().then(() => {
         return;
       }
 
-      const parsedUrl = parse(req.url, true);
-      await handle(req, res, parsedUrl);
+      // Next.js parses the URL itself; url.parse() is deprecated.
+      await handle(req, res);
     } catch (err) {
       console.error('Error occurred handling', req.url, err);
       res.statusCode = 500;
