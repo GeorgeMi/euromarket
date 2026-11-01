@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import CookieConsent from "@/components/CookieConsent";
-import StructuredData from "@/components/StructuredData";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import CookieConsent from "@/components/layout/CookieConsent";
+import StructuredData from "@/components/layout/StructuredData";
 import { SPLASH_INIT_SCRIPT } from "@/lib/splash";
 import { LanguageProvider } from "@/lib/LanguageContext";
 import { SITE_NAME, SITE_URL } from "@/lib/site";

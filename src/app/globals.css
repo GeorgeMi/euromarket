@@ -1,4 +1,6 @@
 @import "tailwindcss";
+/* Print and engraving files are not site code; scanning them adds junk classes. */
+@source not "../../materiale";
 
 @theme inline {
   --color-primary: #26549e;

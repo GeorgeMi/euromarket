@@ -1,7 +1,7 @@
 1:"$Sreact.fragment"
 c:"/_next/static/chunks/1mc9zvgn_b-ps.js"
 d:"/_next/static/chunks/17a6ssveyv-4y.js"
-e:"/_next/static/chunks/310b_7ukqrmiq.js"
+e:"/_next/static/chunks/2w-osju-9ucxh.js"
 f:I[68027,["$c","$d","$e"],"default",1]
 :HL["/_next/static/chunks/1-ta51nl0vud9.css","style"]
 :HL["/_next/static/media/13958cae6c93c43e-s.p.1h18_wedhzk4h.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
@@ -13,14 +13,14 @@ f:I[68027,["$c","$d","$e"],"default",1]
 9:[["children",{"s":"__PAGE__","h":512,"d":{"r":"$La","p":false,"v":null}}]]
 7:[["children",{"s":{"n":"slug","t":"d","k":"proiectare-constructie-statii-epurare","s":[]},"h":66048,"d":{"r":"$L8","p":false,"v":"$6"},"c":"$Q9"}]]
 4:[["children",{"s":{"n":"section","t":"d","k":"servicii","s":["api","privacy"]},"h":197120,"d":{"r":"$L5","p":false,"v":"$6"},"c":"$Q7"}]]
-0:{"P":null,"c":["","servicii","proiectare-constructie-statii-epurare"],"q":"","i":false,"t":{"t":{"s":"","h":131600,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1-ta51nl0vud9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/1mc9zvgn_b-ps.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/17a6ssveyv-4y.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/310b_7ukqrmiq.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ro","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"try{var s=sessionStorage;if(s.getItem(\"splashSeen\")||location.pathname!==\"/\"){s.setItem(\"splashSeen\",\"1\");document.documentElement.classList.add(\"splash-seen\")}}catch(e){document.documentElement.classList.add(\"splash-seen\")}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"yrpiSG_variable font-sans antialiased","children":"$L3"}]]}]]}],"p":false,"v":null},"c":"$Q4"},"h":{"r":"$Lb","p":false,"v":null}},"m":"$undefined","G":["$f",["$L10"]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"irEgUC-3k3B97oTrJebE0"}
+0:{"P":null,"c":["","servicii","proiectare-constructie-statii-epurare"],"q":"","i":false,"t":{"t":{"s":"","h":131600,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1-ta51nl0vud9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/1mc9zvgn_b-ps.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/17a6ssveyv-4y.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/2w-osju-9ucxh.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ro","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"try{var s=sessionStorage;if(s.getItem(\"splashSeen\")||location.pathname!==\"/\"){s.setItem(\"splashSeen\",\"1\");document.documentElement.classList.add(\"splash-seen\")}}catch(e){document.documentElement.classList.add(\"splash-seen\")}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"yrpiSG_variable font-sans antialiased","children":"$L3"}]]}]]}],"p":false,"v":null},"c":"$Q4"},"h":{"r":"$Lb","p":false,"v":null}},"m":"$undefined","G":["$f",["$L10"]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"J2mx2LeOCq5wnIPSAUMCY"}
 11:"LanguageProvider"
 12:I[80938,["$c","$d","$e"],"$11"]
-13:I[45678,["$c","$d","$e"],"default"]
+13:I[3265,["$c","$d","$e"],"default"]
 14:I[39756,["$c","$d","$e"],"default"]
 15:I[37457,["$c","$d","$e"],"default"]
-16:I[13642,["$c","$d","$e"],"default"]
-17:I[11015,["$c","$d","$e"],"default"]
+16:I[58234,["$c","$d","$e"],"default"]
+17:I[3681,["$c","$d","$e"],"default"]
 19:I[97367,["$c","$d","$e"],"OutletBoundary"]
 1a:"$Sreact.suspense"
 1c:"ViewportBoundary"

@@ -2,6 +2,20 @@
 
 Next.js site for Euromarket WWE SRL (wastewater and water treatment plants).
 
+## Layout
+
+| Path | Contents |
+|---|---|
+| `src/app/` | Routes: home, `[section]/[slug]` detail pages, `privacy`, `api/contact`, `sitemap.ts` |
+| `src/components/layout/` | Site chrome shared by every page (Navbar, Footer, CookieConsent, StructuredData) and the home splash screen |
+| `src/components/sections/` | Home page sections, in page order in `src/app/page.tsx` |
+| `src/components/DetailPageView.tsx` | Renders a detail page |
+| `src/lib/` | Translations and language context, detail page content (`detailPages/`), site constants, splash helpers |
+| `public/` | Served as-is: images, videos, `robots.txt` |
+| `server.js` | Production entry point run by cPanel |
+| `.next/` | Committed production build (see Deploy) |
+| `materiale/` | Non-website materials: original images, plus the local-only (gitignored) business card and equipment nameplates ([README](materiale/README.md)) |
+
 ## Development
 
 ```bash

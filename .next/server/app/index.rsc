@@ -1,10 +1,10 @@
 1:"$Sreact.fragment"
 3:"/_next/static/chunks/1mc9zvgn_b-ps.js"
 4:"/_next/static/chunks/17a6ssveyv-4y.js"
-5:"/_next/static/chunks/310b_7ukqrmiq.js"
+5:"/_next/static/chunks/2w-osju-9ucxh.js"
 6:"LanguageProvider"
 7:I[80938,["$3","$4","$5"],"$6"]
-8:I[45678,["$3","$4","$5"],"default"]
+8:I[3265,["$3","$4","$5"],"default"]
 f:I[68027,["$3","$4","$5"],"default",1]
 :HL["/_next/static/chunks/1-ta51nl0vud9.css","style"]
 :HL["/_next/static/media/13958cae6c93c43e-s.p.1h18_wedhzk4h.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
@@ -13,22 +13,22 @@ f:I[68027,["$3","$4","$5"],"default",1]
 :HL["/_next/static/media/76e9fd951b869c7b-s.p.3bh2vc0w-r-ll.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/dd9dfc3601372168-s.p.43zbiuwnnoiok.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 2:T96c,{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://www.euromarket-ro.com/#organization","name":"Euromarket WWE SRL","alternateName":"Euromarket","description":"Proiectare și construcție stații de epurare ape uzate în România. Tehnologii MBBR, SBR, MBR. Peste 500 proiecte din 1996.","url":"https://www.euromarket-ro.com/","logo":{"@id":"https://www.euromarket-ro.com/#logo"},"image":"https://www.euromarket-ro.com/images/sediu-euromarket-iasi.jpg","telephone":"+40232233693","email":"info@euromarket-ro.com","foundingDate":"1996","address":{"@type":"PostalAddress","streetAddress":"B-dul Poitiers 50B","addressLocality":"Iași","addressRegion":"Iași","postalCode":"700669","addressCountry":"RO"},"hasMap":"https://maps.app.goo.gl/yx8QQRLUn6FrQgKn9","openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},"contactPoint":{"@type":"ContactPoint","telephone":"+40232233693","email":"info@euromarket-ro.com","contactType":"customer service","availableLanguage":["Romanian","English"]},"areaServed":{"@type":"Country","name":"Romania"}},{"@type":"ImageObject","@id":"https://www.euromarket-ro.com/#logo","contentUrl":"https://www.euromarket-ro.com/images/logo.png","url":"https://www.euromarket-ro.com/images/logo.png","name":"Logo Euromarket WWE SRL"},{"@type":"WebSite","@id":"https://www.euromarket-ro.com/#website","url":"https://www.euromarket-ro.com/","name":"Euromarket WWE SRL","publisher":{"@id":"https://www.euromarket-ro.com/#organization"},"inLanguage":["ro-RO","en-US"]},{"@type":"Service","@id":"https://www.euromarket-ro.com/#service-wastewater","name":"Stații Epurare Ape Uzate","description":"Proiectare și construcție stații de epurare municipale și industriale. Tehnologii MBBR, SBR, MBR pentru comunități de toate dimensiunile.","provider":{"@id":"https://www.euromarket-ro.com/#organization"},"areaServed":{"@type":"Country","name":"Romania"},"serviceType":"Stație de epurare"},{"@type":"Service","@id":"https://www.euromarket-ro.com/#service-water","name":"Tratarea Apei","description":"Soluții complete de purificare a apei incluzând filtrare, clarificare, demineralizare și dezinfecție.","provider":{"@id":"https://www.euromarket-ro.com/#organization"},"areaServed":{"@type":"Country","name":"Romania"},"serviceType":"Tratarea apei"}]}c:[["children",{"s":"__PAGE__","h":512,"d":{"r":"$Ld","p":false,"v":null}}]]
-0:{"P":null,"c":["",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1-ta51nl0vud9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/1mc9zvgn_b-ps.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/17a6ssveyv-4y.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/310b_7ukqrmiq.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ro","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"try{var s=sessionStorage;if(s.getItem(\"splashSeen\")||location.pathname!==\"/\"){s.setItem(\"splashSeen\",\"1\");document.documentElement.classList.add(\"splash-seen\")}}catch(e){document.documentElement.classList.add(\"splash-seen\")}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"yrpiSG_variable font-sans antialiased","children":["$","$L7",null,{"children":[["$","$L8",null,{}],["$","main",null,{"children":"$L9"}],"$La","$Lb"]}]}]]}]]}],"p":false,"v":null},"c":"$Qc"},"h":{"r":"$Le","p":false,"v":null}},"m":"$undefined","G":["$f",["$L10"]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"irEgUC-3k3B97oTrJebE0"}
+0:{"P":null,"c":["",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1-ta51nl0vud9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/1mc9zvgn_b-ps.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/17a6ssveyv-4y.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/2w-osju-9ucxh.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ro","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"try{var s=sessionStorage;if(s.getItem(\"splashSeen\")||location.pathname!==\"/\"){s.setItem(\"splashSeen\",\"1\");document.documentElement.classList.add(\"splash-seen\")}}catch(e){document.documentElement.classList.add(\"splash-seen\")}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"yrpiSG_variable font-sans antialiased","children":["$","$L7",null,{"children":[["$","$L8",null,{}],["$","main",null,{"children":"$L9"}],"$La","$Lb"]}]}]]}]]}],"p":false,"v":null},"c":"$Qc"},"h":{"r":"$Le","p":false,"v":null}},"m":"$undefined","G":["$f",["$L10"]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"J2mx2LeOCq5wnIPSAUMCY"}
 11:I[39756,["$3","$4","$5"],"default"]
 12:I[37457,["$3","$4","$5"],"default"]
-13:I[13642,["$3","$4","$5"],"default"]
-14:I[11015,["$3","$4","$5"],"default"]
+13:I[58234,["$3","$4","$5"],"default"]
+14:I[3681,["$3","$4","$5"],"default"]
 15:"/_next/static/chunks/2t5-91b2qr066.js"
-16:"/_next/static/chunks/1n8mpgqkfknil.js"
-17:I[70023,["$3","$4","$5","$15","$16"],"default"]
-18:I[32177,["$3","$4","$5","$15","$16"],"default"]
-19:I[17785,["$3","$4","$5","$15","$16"],"default"]
-1a:I[64275,["$3","$4","$5","$15","$16"],"default"]
-1b:I[55786,["$3","$4","$5","$15","$16"],"default"]
-1c:I[16588,["$3","$4","$5","$15","$16"],"default"]
-1d:I[27641,["$3","$4","$5","$15","$16"],"default"]
-1e:I[89594,["$3","$4","$5","$15","$16"],"default"]
-1f:I[75854,["$3","$4","$5","$15","$16"],"default"]
+16:"/_next/static/chunks/3es5yd07jp1m3.js"
+17:I[19055,["$3","$4","$5","$15","$16"],"default"]
+18:I[77258,["$3","$4","$5","$15","$16"],"default"]
+19:I[43865,["$3","$4","$5","$15","$16"],"default"]
+1a:I[69343,["$3","$4","$5","$15","$16"],"default"]
+1b:I[95116,["$3","$4","$5","$15","$16"],"default"]
+1c:I[84719,["$3","$4","$5","$15","$16"],"default"]
+1d:I[83650,["$3","$4","$5","$15","$16"],"default"]
+1e:I[67540,["$3","$4","$5","$15","$16"],"default"]
+1f:I[47710,["$3","$4","$5","$15","$16"],"default"]
 20:I[97367,["$3","$4","$5"],"OutletBoundary"]
 21:"$Sreact.suspense"
 23:"ViewportBoundary"
@@ -38,7 +38,7 @@ f:I[68027,["$3","$4","$5"],"default",1]
 9:["$","$L11",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L12",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]
 a:["$","$L13",null,{}]
 b:["$","$L14",null,{}]
-d:["$","$1","c",{"children":[[["$","$L17",null,{}],["$","$L18",null,{}],["$","$L19",null,{}],["$","$L1a",null,{}],["$","$L1b",null,{}],["$","$L1c",null,{}],["$","$L1d",null,{}],["$","$L1e",null,{}],["$","$L1f",null,{}]],[["$","script","script-0",{"src":"/_next/static/chunks/2t5-91b2qr066.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1n8mpgqkfknil.js","async":true,"nonce":"$undefined"}]],["$","$L20",null,{"children":["$","$21",null,{"name":"Next.MetadataOutlet","children":"$@22"}]}]]}]
+d:["$","$1","c",{"children":[[["$","$L17",null,{}],["$","$L18",null,{}],["$","$L19",null,{}],["$","$L1a",null,{}],["$","$L1b",null,{}],["$","$L1c",null,{}],["$","$L1d",null,{}],["$","$L1e",null,{}],["$","$L1f",null,{}]],[["$","script","script-0",{"src":"/_next/static/chunks/2t5-91b2qr066.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/3es5yd07jp1m3.js","async":true,"nonce":"$undefined"}]],["$","$L20",null,{"children":["$","$21",null,{"name":"Next.MetadataOutlet","children":"$@22"}]}]]}]
 e:["$","$1","h",{"children":[null,["$","$L24",null,{"children":"$L25"}],["$","$L27",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$21",null,{"name":"Next.Metadata","children":"$L28"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
 10:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1-ta51nl0vud9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
 25:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
